@@ -1,38 +1,52 @@
 ---
-title: Hello World
+title: 建站小结
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+## 前言
+简单记录下建站的过程吧。  
+一直念叨着建自己的博客，总算是建起来了，域名也是看了好久。  
+建站主要参考了[云游君](https://www.yunyoujun.cn/)的[教你如何从零开始搭建一个属于自己的网站](https://www.yunyoujun.cn/share/how-to-build-your-site/)，还是挺新的教程，相当清晰明了，没有太啰嗦也没有太简略，有些教程只讲步骤不讲是什么就有点云里雾里，不过结果我还是走了一些弯路orz。  
+建站前一直感觉建站应该还是蛮复杂的一件事（虽然教程都说很简单），看各种建站教程感觉都好长好长的，建完了发现还真挺简单的（当然也是Hexo比较简单）。  
 
-### Create a new post
+## 为什么建站
+主要还是想写点东西，分享点东西吧，而且作为程序员不弄个个人网站感觉没什么人权。也想过在别的网站直接写，但是网站上毕竟不太方便写私人的东西，也只能写文章，还要经过审核。自己的博客总归是随心所欲，为所欲为了。  
 
-``` bash
-$ hexo new "My New Post"
-```
+## 选择框架
+一番谷歌之后发现主流博客框架有WordPress、Typecho、Hexo，还有些大佬自己整的博客框架，Aurora等等，还有用[GitHub issues](https://github.com/lifesinger/blog/issues)的骚操作的。简单介绍下主流框架吧。  
 
-More info: [Writing](https://hexo.io/docs/writing.html)
+WordPress，老古董了，PHP+MySQL，动态，简单地说你得搞个服务器来运行WordPress，比如VPS，比较臃肿，但是社区也丰富。  
+Typecho，相当于是轻量的WordPress，后台也比较简洁。  
+Hexo，基于Node，静态，静态的好处就是不用搞服务器了，整个托管平台就行，最常用的就是Github page了，坏处就是没有网页后台，写博客得自己本地写md文件然后部署，然后换电脑的话还得装一套Node+Git环境。  
 
-### Run server
+光建站来说Hexo应该是最简单的，也是最便宜的，如果不弄域名等于是零成本，但是建完了开始运营会比动态的麻烦一点。  
+WordPress我是直接Pass了，个人还是倾向新的技术，然后就选了简单的Hexo试试水了。  
 
-``` bash
-$ hexo server
-```
+## 选择主题
+框架选完了还要选主题，当然大佬也可以自己搞主题了，像我这种懒比就选个顺眼的主题用用就行了。本来也是想着自己的博客总得有点自己的东西吧，但想想博客本身只是手段，不是目的，就不多花精力了，前端我也基本不懂。  
 
-More info: [Server](https://hexo.io/docs/server.html)
+## 域名
+域名的学问就太多了，要注册的话，可以参考[知乎](https://www.zhihu.com/question/19551906)，国内的话主要是阿里云和腾讯云的，国外就多了，[namecheap](https://www.namecheap.com/)，[namesilo](https://www.namesilo.com/)等等，最好是用国外的注册商，不会把你域名封了，而且国内的顶级域名少很多。我的话用的是[dynadot](https://www.dynadot.com/)，网站很快，中文界面，域名也很多，想用的话注册账号的时候可以填我的推荐码：T6G6O8K6Z818O7v，说是消费10美元可以拿5美元。  
 
-### Generate static files
+如果你想了解域名是如何跟你的网站联系在一起的，可以参考[DNS 原理入门](https://www.ruanyifeng.com/blog/2016/06/dns.html)。  
+如果你想了解为什么买一个没人用的域名要花钱，花的钱到谁手里了，可以参考[根域名的知识](https://www.ruanyifeng.com/blog/2018/05/root-domain.html)。  
+如果你想了解有哪些顶级域名的话，可以参考[全部顶级域名列表](http://www.iana.org/domains/root/db)，当然很多域名是不开放注册的。  
+通常心仪的域名99%已经被抢了，也没办法，都2020年了，域名要是实在选不出来，暂时不买也不影响建站，静态的用xxx.github.io就好，不是静态的就直接用IP。  
 
-``` bash
-$ hexo generate
-```
+反正我最后是搞了个cf1.me，比较短也很便宜，没什么意思，就是cloudfox的首字母加个1，当然有数字确实不是很好看，不说了，我GithubID更难看（早知道早点注册Github了）。  
+写本文的时候才发现dynadot最近搞[活动](https://www.dynadot.com/resumeboost?utm_source=Search%20Domain%20Text&utm_medium=Resume%20Boost%20Even%20Flow&utm_campaign=Resume%20Boost%202020&drefid=148)，8个顶级域名免费1年，又去白嫖了一个。  
+国内基本没有dynadot的资料（当然官方文档也挺全的，又有中文，应该没什么障碍），所以放下我的DNS配置，可以参考下，我配了一个www子域名跳转主域名的，好像还可以弄个邮箱跳转的，没研究出来。  
+![DNS配置](https://cf0.oss-cn-shanghai.aliyuncs.com/img/20200502003941.png)  
+免费SSL也可以开下，开了就能用HTTPS了。  
 
-More info: [Generating](https://hexo.io/docs/generating.html)
+## 建站
+具体过程我就不多写了，我是参考[教你如何从零开始搭建一个属于自己的网站](https://www.yunyoujun.cn/share/how-to-build-your-site/)的反正，老老实实按着步骤来就好了，我不老实的所有操作都被证明是傻叉操作。  
+装Node的时候有一个选项让你装Chocolatey（默认没有勾选），我以为可能有什么用就装了，其实并没有什么卵用。  
+然后后面git让我建一个hexo分支，我心说为什么要两个分支，直接master不就好了，就没有建hexo分支，然后建完了我才意识到master分支相当于是网站内容，hexo分支就是你编辑用的，相当于你的后台，我全混在master分支就很不合适，搞得我又删了本地和远程仓库重新搞了一遍，当然也没花多久就是了。  
 
-### Deploy to remote sites
+写文章的话在source/_post里写MD文件，然后就是部署跟推送源码。  
+部署就是更新你的网站，`hexo g -d`就好了，有什么问题就先`hexo clean`，部署也会更新你的master分支。  
+推送源码可以方便异地协作，也可以当做备份。git我很熟了所以也很轻松，如果对git不熟的话最好是装个git图形界面客户端，我是用的[Fork](https://git-fork.com/)，Win和Mac都有，图形界面也能直观地帮你理解git，当然你得清楚有些不常用的git操作在图形界面是没有的。
 
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+## 结语
+就这篇玩意就拖了我好几天，很怀疑自己的博客更新进度，而且连主题都还没配，想着写完这篇再配，要不然主题都看不到啥东西。  
+顺便还复习了下MD语法，从来没正式写过MD，然后还配了阿里云图床什么的。  

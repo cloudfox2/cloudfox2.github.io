@@ -99,6 +99,6 @@ theme: landscape
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/cloudfox2/cloudfox2.github.io
+  repo: git@github.com:cloudfox2/cloudfox2.github.io.git
   branch: master
   message: update

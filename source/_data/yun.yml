@@ -1,0 +1,198 @@
+colors:
+  primary: "#2F54EB"
+  bg: "#bae7ff"
+  selection_bg: "#85A5FF" # #00C4B6
+  # 标签云中标签的起始色和结束色
+  # tag_start_color:
+  # tag_end_color:
+
+font:
+  cdn:
+      enable: true
+      lib:
+        - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&family=Source+Code+Pro&display=swap
+  serif:
+    family: "'Noto Serif SC', serif"
+    weight: 700
+  sans_serif:
+    family: "-apple-system, BlinkMacSystemFont, 'Noto Sans', 'Helvetica Now', 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans CJK SC', 'Source Han Sans SC', 'Source Han Sans CN', 'Microsoft YaHei', 'Wenquanyi Micro Hei', 'WenQuanYi Zen Hei', 'ST Heiti', SimHei, 'WenQuanYi Zen Hei Sharp', sans-serif"
+    weight: 400
+  monospace:
+    family: "Consolas, Menlo, 'Fira Code', 'Source Code Pro', monospace"
+
+favicon: /favicon.ico
+
+bg_image:
+  enable: true
+  #url: https://cf0.oss-cn-shanghai.aliyuncs.com/img/1150.jpg
+  #url: https://cdn.jsdelivr.net/gh/cloudfox2/cloudfox2.github.io@latest/
+  url: /images/bg.jpg
+  opacity: 1
+
+sidebar:
+  bg_image: /images/bg_sidebar.png
+  bg_position: bottom left
+  # bg_position: bottom 3rem center
+
+search:
+  bg_image: /images/bg_search.jpg
+  # placeholder: 
+
+banner:
+  enable: true
+  title: 云狐之境
+  src: /js/ui/banner.js
+  cloud: true
+  go_down:
+    enable: true
+    icon: icon-arrow-down-s-line
+
+menu:
+  home:
+    path: /
+    icon: icon-home-4-line
+  archives:
+    path: /archives
+    icon: icon-archive-line
+  tags:
+    path: /tags
+    icon: icon-price-tag-3-line
+  categories:
+    path: /categories
+    icon: icon-folder-2-line
+  custom:
+    title: 留言
+    path: /about/#comment
+    icon: icon-clipboard-line
+
+pages:
+  - name: 友链
+    url: /links/
+    icon: icon-genderless-line
+    color: dodgerblue
+  - name: 老婆
+    url: /girls/
+    icon: icon-women-line
+    color: hotpink
+  
+girls:
+  enable: true
+
+avatar:
+  enable: true
+  url: /images/avatar.png
+  rounded: true
+  opacity: 1
+  mickey_mouse: false
+
+fireworks:
+  enable: true
+  colors:
+    - "102, 167, 221"
+    - "62, 131, 225"
+    - "33, 78, 194"
+
+footer:
+  since: 2020
+  icon:
+    name: icon-cloud-line
+    animated: true
+    color: "#D6E4FF"
+
+archive:
+  last_word: '以上'
+
+social:
+  # - name: RSS
+  #   # set rss in your root config
+  #   # https://github.com/hexojs/hexo-generator-feed
+  #   link: atom.xml # config.feed.path
+  #   icon: icon-rss-line
+  #   color: orange
+  - name: QQ
+    link: https://wpa.qq.com/msgrd?v=3&uin=348868282&site=qq&menu=yes
+    icon: icon-qq-line
+    color: "#12B7F5"
+  - name: GitHub
+    link: https://github.com/cloudfox2
+    icon: icon-github-line
+    color: "#181717"
+  - name: E-Mail
+    link: mailto:348868282@qq.com
+    icon: icon-mail-line
+    color: "#8E71C1"
+  - name: bilibili
+    link: https://space.bilibili.com/353913
+    icon: icon-bilibili-line
+    color: "#FF8EB3"
+  - name: Telegram
+    link: https://t.me/cloudfox2
+    icon: icon-telegram-line
+    color: "#0088CC"
+
+# cdn:
+#   pre: https://cdn.jsdelivr.net/gh/cloudfox2/cloudfox2.github.io@latest
+
+say:
+  enable: true
+  api: /data/sentences.json
+  src: /js/say.js
+  # https://developer.hitokoto.cn/sentence/
+  hitokoto:
+    enable: false
+    api: https://v1.hitokoto.cn
+
+symbols_count_time:
+  item_text_post: true
+  item_text_total: true
+  awl: 2
+  wpm: 250
+
+engine_search:
+  enable: false
+
+local_search:
+  enable: true
+  src: /js/search/local-search.js
+
+reward_settings:
+  enable: false
+  icon: icon-hand-coin-line
+  comment: 我很可爱，请给我钱
+
+comment:
+  enable: true
+  tips:
+    - 若您无 GitHub 账号，可直接在下方评论。
+    - 若您想及时得到回复提醒，建议跳转 GitHub Issues 评论。
+    - 若没有本文 Issue，您可以使用 Comment 模版新建。
+
+github_issues:
+  enable: true
+  username: cloudfox2
+  repository: cloudfox2.github.io
+  filters: is:issue
+
+valine:
+  enable: true
+  appId: xniScjvwPxO3ivBW25ReiHWe-MdYXbMMI
+  appKey: MEIJgTbrcF7NTqWDr48je6OP
+  placeholder: Just go go # comment box placeholder
+  avatar: mp # gravatar style
+  meta:
+    - nick
+    - mail
+    - link
+  pageSize: 10 # pagination size
+  visitor: true
+  visitor_index: false
+  recordIP: true
+  # serverURLs:
+  # Emoji See: https://valine.js.org/emoji.html
+  # emojiCDN: //i0.hdslb.com/bfs/emote/
+  # emojiMaps:
+  #   tv_doge: 6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png
+  #   more...
+  enableQQ: true
+  requiredFields:
+    - nick

@@ -1,0 +1,41 @@
+extends _partial/layout.pug
+
+block content
+  #page
+    if page.type === 'tags'
+      +page_header(page.title, theme.menu.tags.icon)
+      .page-subtitle=_p('counter.tag_cloud', site.tags.length)
+      .tag-cloud
+        - var start_color = theme.color ? (theme.color.tag_start_color || '#333'): '#999999'
+        - var end_color = theme.color ? (theme.color.tag_end_color || theme.colors.primary) : '#1B9EF3'
+        .tag-cloud-tags!= tagcloud({min_font: 12, max_font: 30, amount: 200, color: true, start_color, end_color})
+
+    else if page.type === 'categories'
+      +page_header(page.title, theme.menu.categories.icon)
+      .page-subtitle=_p('counter.categories', site.categories.length)
+      .category-lists!= list_categories()
+
+    else if page.type === 'albums'
+      +page_header(page.title, theme.albums.icon)
+      .page-subtitle= _p('counter.albums', page.albums.length)
+      .album-list
+        for album in page.albums
+          a.album-list-item(href=url_for(album.url))
+            figure(title=album.desc)
+              img.album-list-cover(src=album.cover, loading="lazy", alt=album.caption, οnlοad="this.src=CONFIG.anonymous_image")
+              figcaption='「'+album.caption+'」'
+
+    else
+      +page_header(page.title, page.icon)
+      article#page
+        section.post-body(itemprop='articleBody')
+          .post-content(class='post-markdown')!= page.content
+
+    if page.reward !== undefined
+      - theme.reward_settings.enable = page.reward
+    if theme.reward_settings.enable
+      include _partial/post/reward.pug
+
+  if page.comments && theme.comment.enable
+    include ./_third-party/comments/index.pug
+

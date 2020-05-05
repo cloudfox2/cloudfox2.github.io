@@ -1,0 +1,13 @@
+#comment
+  .comment-tooltip.text-center
+    if theme.comment.tips
+      each tip in theme.comment.tips
+        span!=tip
+        br
+    if theme.github_issues.enable
+      include github-issues.pug
+
+  if theme.valine && theme.valine.enable
+    include valine.pug
+  if theme.minivaline && theme.minivaline.enable
+    include minivaline.pug

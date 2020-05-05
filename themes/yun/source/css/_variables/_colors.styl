@@ -1,0 +1,35 @@
+// color
+$white = #FFFFFF;
+$white90 = #FFFFFFE6;
+$white50 = #FFFFFF80;
+$white30 = #FFFFFF4D;
+$black = #000000;
+$light = #f7f7f7;
+$body = #2e405b;
+$dark = #303133;
+$gray = #999999;
+$red = #db2828;
+$orange = #EB6C46; //#F2711C
+$yellow = #FF8718;
+$green = #21ba45;
+$blue = #0078E7;
+$indigo = #515bd4;
+$purple = #8e71c1;
+$indigo = #6200ee;
+$light-blue = #42B8DD;
+$light-gray = #CCCCCC;
+$colors ?= {
+  primary: convert(hexo-config('colors.primary')) || $purple,
+  inverse: $yellow,
+  success: $green,
+  warning: $orange,
+  danger: $red,
+  info: $light-blue
+};
+// text
+$color ?= {
+  text: $dark,
+  link: $colors.primary
+};
+// selection
+$selection-bg = convert(hexo-config('colors.selection_bg'));

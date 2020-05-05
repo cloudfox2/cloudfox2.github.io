@@ -26,16 +26,16 @@ bg_image:
   enable: true
   #url: https://cf0.oss-cn-shanghai.aliyuncs.com/img/1150.jpg
   #url: https://cdn.jsdelivr.net/gh/cloudfox2/cloudfox2.github.io@latest/
-  url: /images/bg.jpg
+  url: https://cf0.oss-cn-shanghai.aliyuncs.com/blog/bg.jpg
   opacity: 1
 
 sidebar:
-  bg_image: /images/bg_sidebar.png
+  bg_image: https://cf0.oss-cn-shanghai.aliyuncs.com/blog/bg_sidebar.png
   bg_position: bottom left
   # bg_position: bottom 3rem center
 
 search:
-  bg_image: /images/bg_search.jpg
+  bg_image: https://cf0.oss-cn-shanghai.aliyuncs.com/blog/bg_search.jpg
   # placeholder: 
 
 banner:
@@ -46,6 +46,13 @@ banner:
   go_down:
     enable: true
     icon: icon-arrow-down-s-line
+
+avatar:
+  enable: true
+  url: https://cf0.oss-cn-shanghai.aliyuncs.com/blog/avatar.png
+  rounded: true
+  opacity: 1
+  mickey_mouse: false
 
 menu:
   home:
@@ -77,13 +84,6 @@ pages:
   
 girls:
   enable: true
-
-avatar:
-  enable: true
-  url: /images/avatar.png
-  rounded: true
-  opacity: 1
-  mickey_mouse: false
 
 fireworks:
   enable: true

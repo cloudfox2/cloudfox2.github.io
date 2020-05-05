@@ -40,7 +40,7 @@ for i in 1...10 {
 }
 ```
 
-![图片](/images/test.png)_图片注释_
+![图片](https://cf0.oss-cn-shanghai.aliyuncs.com/blog/test.png)_图片注释_
 
 ### 二级目录
 

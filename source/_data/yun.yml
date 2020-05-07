@@ -1,10 +1,10 @@
 colors:
   primary: "#2F54EB"
   bg: "#bae7ff"
-  selection_bg: "#85A5FF" # #00C4B6
+  selection_bg: "#85A5FF"
   # 标签云中标签的起始色和结束色
-  # tag_start_color:
-  # tag_end_color:
+  tag_start_color: "#85A5FF"
+  tag_end_color: "#10239E"
 
 font:
   cdn:
@@ -39,7 +39,7 @@ search:
 
 banner:
   enable: true
-  title: 云狐之境
+  title: 雲狐之境
   src: /js/ui/banner.js
   cloud: true
   go_down:
@@ -157,17 +157,17 @@ local_search:
 reward_settings:
   enable: false
   icon: icon-hand-coin-line
-  comment: 我很可爱，请给我钱
+  comment: 听君一席话，胜读十年书
 
 comment:
   enable: true
   tips:
-    - 若您无 GitHub 账号，可直接在下方评论。
-    - 若您想及时得到回复提醒，建议跳转 GitHub Issues 评论。
-    - 若没有本文 Issue，您可以使用 Comment 模版新建。
+    # - 若您无 GitHub 账号，可直接在下方评论。
+    # - 若您想及时得到回复提醒，建议跳转 GitHub Issues 评论。
+    # - 若没有本文 Issue，您可以使用 Comment 模版新建。
 
 github_issues:
-  enable: true
+  enable: false
   username: cloudfox2
   repository: cloudfox2.github.io
   filters: is:issue
@@ -176,7 +176,7 @@ valine:
   enable: true
   appId: xniScjvwPxO3ivBW25ReiHWe-MdYXbMMI
   appKey: MEIJgTbrcF7NTqWDr48je6OP
-  placeholder: 留下评论... # comment box placeholder
+  placeholder: 加入讨论... # comment box placeholder
   avatar: mp # gravatar style
   meta:
     - nick
@@ -193,5 +193,6 @@ valine:
   #   tv_doge: 6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png
   #   more...
   enableQQ: true
-  requiredFields:
-    - nick
+  # requiredFields:
+  #   - nick
+  #   - mail

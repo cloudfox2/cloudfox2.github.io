@@ -12,10 +12,10 @@ girls:
     avatar: https://cf0.oss-cn-shanghai.aliyuncs.com/blog/hibiki.webp
     from: 艦隊Collection
     url: https://zh.moegirl.org/%E8%88%B0%E9%98%9FCollection:%E5%93%8D
-    reason: 不死鸟的名字可不是花瓶
+    reason: 不死鸟
   - name: 姬野星奏
     avatar: https://cf0.oss-cn-shanghai.aliyuncs.com/blog/sena.webp
     from: 恋×シンアイ彼女
     url: https://zh.moegirl.org/%E5%A7%AC%E9%87%8E%E6%98%9F%E5%A5%8F
-    reason: 唯一玩过的 Gal
+    reason: 玩过的第一部也是最后一部 Galgame
 ---

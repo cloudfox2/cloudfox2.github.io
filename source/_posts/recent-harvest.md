@@ -14,7 +14,10 @@ hide: true
 ## 前端相关
 
 前端每一项东西都有讲究，我又是完美主义，又看了好多资料折腾好久，以前也没了解过这方面。
-而且又是各种选择，头疼啊，突然想起来一个网站 [Slant](https://www.slant.co/)，可以稍微缓解选择困难，不过也只能说仅供参考，但至少把选项列出来了是吧。
+[Slant](https://www.slant.co/)：可以稍微缓解选择困难，不过也只能说仅供参考，但至少把选项列出来了是吧。
+[Can I use](https://caniuse.com/)：前端各种东西的兼容性情况。
+[PageSpeed Insight](https://developers.google.com/speed/pagespeed/insights/?hl=zh-cn)：谷歌的网站性能分析。
+[Lighthouse](https://developers.google.com/web/tools/lighthouse/)：审查网站各项性能。
 
 ### 字体
 
@@ -24,20 +27,27 @@ hide: true
 
 ### 配色
 
-[And Design](https://ant.design/docs/spec/colors-cn)
-[Adobe Color](https://color.adobe.com/zh/create)
-[ColorPK](https://react.colorpk.com/)
-[Color Hunt](https://colorhunt.co/palettes/trendy)
+[And Design](https://ant.design/docs/spec/colors-cn)：配好的色板和一个色板生成算法。
+[Adobe Color](https://color.adobe.com/zh/create)：可以自选主色和色彩调和方式。
+[ColorPK](https://react.colorpk.com/)：配好的色板。
+[Color Hunt](https://colorhunt.co/palettes/trendy)：配好的色板。
 
 ### 排版
 
-[中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines/blob/master/README.zh-CN.md)，基于此的 [VSCode 插件](https://marketplace.visualstudio.com/items?itemName=ZhixiangZhang.mdlint)。
-顺便还了解了下 [Angular Commit 规范](http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)，当然这个更适合开发用，想轻松一点的话可以用 [gitmoji](https://gitmoji.carloscuesta.me/)。
+[中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines/blob/master/README.zh-CN.md)
+[mdlint](https://marketplace.visualstudio.com/items?itemName=ZhixiangZhang.mdlint)：基于上面指北的 VSCode MarkDown 插件。
+[Angular Commit 规范](http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)：顺便了解了下。
+[gitmoji](https://gitmoji.carloscuesta.me/)，轻松一点的话可以用这个 commit。
 
 ### 图片
 
-基本的图片处理我倒是没问题，库存也够用，不过又说 WebP 格式很小很快，又去折腾 WebP 格式，一开始找到个 PS 的 WebP 插件，看上去还行，但是用下来 100 有损都有肉眼可见失真，然后又找到 [智图](https://zhitu.isux.us/)，用下来感觉还行，图片品质直接用它默认给的基本没问题，有一点点失真，个别特别讲究的图片可以用 JPEG 格式，也不是大。图床暂时用的阿里云 OSS，CDN 啥的还没折腾。
+基本的图片处理我倒是没问题，不过听说 WebP 格式很小很快，又去折腾 WebP 格式，一开始找到个 PS 的 WebP 插件，看上去还行，但是用下来 100 有损都有肉眼可见失真，然后又找到智图，用下来感觉还行，图片品质直接用它默认给的基本没问题，还有个 picdiet。我的主背景用 picdiet 压的，其他的都是用智图的 WebP 压缩。
+图床暂时用的阿里云 OSS，CDN 啥的还没折腾。
+
+[智图](https://zhitu.isux.us/)，在线压缩，支持各种格式，可以原格式压缩或 WebP 格式压缩，压缩效果良好。
+[picdiet](https://www.picdiet.com/zh-cn)，纯 JS 在线压缩算法，只支持 JPG 和 JPEG 格式，压缩率接近 WebP，速度也很快，感觉对大图效果比较好，小图的失真比较明显。
 
 ### 主题
 
-Yun 这个主题还是有点稚嫩，好多细节没做好，比如压根不支持带暗色的背景。我 Fork 下来改了好多地方，就当学习了吧。
+Yun 这个主题还是有点稚嫩，对暗色背景支持不太好，我 Fork 下来改了好些地方，就当学习了，还从来没搞过 CSS 什么的。
+当然总体还是个挺舒服的主题，小巧精致，也没有太花里胡哨。

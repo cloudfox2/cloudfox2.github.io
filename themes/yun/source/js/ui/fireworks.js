@@ -142,15 +142,17 @@ let render = anime({
   }
 });
 
-document.addEventListener(
-  tap,
-  function(e) {
-    render.play();
-    updateCoords(e);
-    animateParticules(pointerX, pointerY);
-  },
-  false
-);
+if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+  document.addEventListener(
+    tap,
+    function(e) {
+      render.play();
+      updateCoords(e);
+      animateParticules(pointerX, pointerY);
+    },
+    false
+  );
+}
 
 setCanvasSize();
 window.addEventListener("resize", setCanvasSize, false);

@@ -16,6 +16,30 @@
 
 默认语言为中文 `zh-CN`。
 
+### 个性化语言包
+
+在 Hexo 工作目录下新建 `source/_data/languages.yml`。（若 `source/_data` 目录不存在，请新建。）
+
+采用约定大于配置的方式，您仅需在 `languages.yml` 中自定义您想要覆盖的语言，其余将自动与主题默认配置合并。（这样做也更方便日后的升级）
+
+配置方式参考下例：
+
+```yml
+en: # 将要覆盖的语言
+  menu:
+    home: My Index
+
+ja: # 将要覆盖的语言
+  menu:
+    home: マイインデックス
+
+zh-CN: # 将要覆盖的语言
+  menu:
+    home: 我的主页
+```
+
+如果仅使用中文语言，除 `zh-CN` 项目均可删除。
+
 ## 主题色
 
 自定义主题的主色调。
@@ -97,8 +121,7 @@ favicon: /favicon.ico
 
 譬如：亮色浏览器 LOGO 为黑色描边，暗色浏览器 LOGO 为白色描边。
 
-你的图标须为 `svg` 文件，并为其添加对应样式。
-
+> 如果你想要为自己的图标添加该特性，你的图标须为 `svg` 文件，并为其添加对应样式。
 > 你可以参考我的 LOGO SVG 代码。[yun.svg](https://github.com/YunYouJun/hexo-theme-yun/blob/dev/source/yun.svg)
 
 Example:

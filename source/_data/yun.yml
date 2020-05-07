@@ -24,18 +24,17 @@ favicon: /favicon.ico
 
 bg_image:
   enable: true
-  #url: https://cf0.oss-cn-shanghai.aliyuncs.com/img/1150.jpg
   #url: https://cdn.jsdelivr.net/gh/cloudfox2/cloudfox2.github.io@latest/
   url: https://cf0.oss-cn-shanghai.aliyuncs.com/blog/bg.jpg
   opacity: 1
 
 sidebar:
-  bg_image: https://cf0.oss-cn-shanghai.aliyuncs.com/blog/bg_sidebar.png
+  bg_image: https://cf0.oss-cn-shanghai.aliyuncs.com/blog/bg_sidebar.webp
   bg_position: bottom left
   # bg_position: bottom 3rem center
 
 search:
-  bg_image: https://cf0.oss-cn-shanghai.aliyuncs.com/blog/bg_search.jpg
+  bg_image: https://cf0.oss-cn-shanghai.aliyuncs.com/blog/bg_search.webp
   # placeholder: 
 
 banner:
@@ -49,7 +48,7 @@ banner:
 
 avatar:
   enable: true
-  url: https://cf0.oss-cn-shanghai.aliyuncs.com/blog/avatar.png
+  url: https://cf0.oss-cn-shanghai.aliyuncs.com/blog/avatar.webp
   rounded: true
   opacity: 1
   mickey_mouse: false
@@ -73,11 +72,11 @@ menu:
     icon: icon-clipboard-line
 
 pages:
-  - name: 友链
+  - name: 如水
     url: /links/
     icon: icon-genderless-line
     color: dodgerblue
-  - name: 老婆
+  - name: 朱颜
     url: /girls/
     icon: icon-women-line
     color: hotpink
@@ -97,7 +96,7 @@ footer:
   icon:
     name: icon-cloud-line
     animated: true
-    color: "#D6E4FF"
+    color: "#85A5FF"
 
 archive:
   last_word: '以上'
@@ -177,15 +176,15 @@ valine:
   enable: true
   appId: xniScjvwPxO3ivBW25ReiHWe-MdYXbMMI
   appKey: MEIJgTbrcF7NTqWDr48je6OP
-  placeholder: Just go go # comment box placeholder
+  placeholder: 留下评论... # comment box placeholder
   avatar: mp # gravatar style
   meta:
     - nick
     - mail
     - link
   pageSize: 10 # pagination size
-  visitor: true
-  visitor_index: false
+  visitor: true # 访问量统计
+  visitor_index: false #主页访问量统计
   recordIP: true
   # serverURLs:
   # Emoji See: https://valine.js.org/emoji.html

@@ -30,18 +30,18 @@ tags:
 
 ## 选择框架
 
-一番谷歌之后发现主流博客框架有 WordPress、Typecho、Hexo，还有些大佬自己整的博客框架，[Aurora](https://github.com/chanshiyucx/aurora)，[Sakura](https://2heng.xin/theme-sakura/) 等等，还有用 [GitHub issues](https://github.com/lifesinger/blog/issues) 的骚操作的。简单介绍下主流框架吧。
+一番谷歌之后发现国内主流博客框架有 WordPress、Typecho、Hexo，还有些大佬自己整的博客框架，[Aurora](https://github.com/chanshiyucx/aurora)，[Sakura](https://2heng.xin/theme-sakura/) 等等，还有用 [GitHub issues](https://github.com/lifesinger/blog/issues) 的骚操作的。简单介绍下主流框架吧。
 
-WordPress，03 年的老古董了，PHP + MySQL，动态，简单地说你得搞个服务器来运行 WordPress，比如 VPS，比较臃肿，但是社区也丰富。
-Typecho，08 年？出现，国人写的，相当于是轻量的 WordPress，后台也比较简洁。
-Hexo，12 年出现，基于 Node，静态，静态的好处就是不用搞服务器了，整个托管平台就行，最常用的就是 GitHub page 了，坏处就是没有网页后台，写博客得自己本地写 MD 文件然后部署，然后换电脑的话还得装一套 Node + Git 环境。
+WordPress，03 年的老古董了，由美国人 Matt Mullenweg 和英国人 Mike Little 共同开发，PHP + MySQL，动态，简单地说你得搞个服务器来运行 WordPress，比如 VPS，比较臃肿，但是社区也丰富。
+Typecho，08 年？出现，[国人开发](https://typecho.org/about)，PHP + 各种数据库，相当于是轻量的 WordPress，后台也比较简洁，不过好像最近三年都没有更新了。
+Hexo，12 年出现，作者是台湾的大学生 [tommy351](https://github.com/tommy351)（大佬牛皮），基于 Node，静态，静态的好处就是不用搞服务器了，整个托管平台就行，最常用的就是 GitHub page 了，坏处就是没有网页后台，写博客得自己本地写 MD 文件然后部署，然后换电脑的话还得装一套 Node + Git 环境。
 
 光建站来说 Hexo 应该是最简单的，也是最便宜的，如果不弄域名等于是零成本，但是建完了开始运营会比动态的麻烦一点。
 WordPress 我是直接 pass 了，个人还是倾向新的技术，然后就选了简单的 Hexo 试试水了。
 
 ## 选择主题
 
-框架选完了还要选主题，当然大佬也可以自己搞主题了，像我这种懒比就选个顺眼的主题用用就行了，比如直接去看看大佬们的博客用的主题，或者可以看 [这里](https://easyhexo.com/2-Theme-use-and-config/)。本来也是想着自己的博客总得有点自己的东西吧，但想想博客本身只是手段，不是目的，就不多花精力了，前端我也基本不懂。
+框架选完了还要选主题，当然大佬也可以自己搞主题了，像我这种懒比就选个顺眼的主题用用就行了，比如在 [GitHub](https://github.com/search?q=hexo+theme) 上找，或者看 [Easy Hexo](https://easyhexo.com/2-Theme-use-and-config/)，[Hexo 官网](https://hexo.io/themes/)，或者直接去看看大佬们的博客用的主题。本来也是想着自己的博客总得有点自己的东西吧，但想想博客本身只是手段，不是目的，就不多花精力了，前端我也基本不懂。
 
 ## 域名
 

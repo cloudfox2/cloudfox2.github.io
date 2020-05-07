@@ -14,6 +14,7 @@ hide: true
 ## 前端相关
 
 前端每一项东西都有讲究，我又是完美主义，又看了好多资料折腾好久，以前也没了解过这方面。
+而且又是各种选择，头疼啊，突然想起来一个网站 [Slant](https://www.slant.co/)，可以稍微缓解选择困难，不过也只能说仅供参考，但至少把选项列出来了是吧。
 
 ### 字体
 
@@ -33,5 +34,10 @@ hide: true
 [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines/blob/master/README.zh-CN.md)，基于此的 [VSCode 插件](https://marketplace.visualstudio.com/items?itemName=ZhixiangZhang.mdlint)。
 顺便还了解了下 [Angular Commit 规范](http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)，当然这个更适合开发用，想轻松一点的话可以用 [gitmoji](https://gitmoji.carloscuesta.me/)。
 
+### 图片
+
+基本的图片处理我倒是没问题，库存也够用，不过又说 WebP 格式很小很快，又去折腾 WebP 格式，一开始找到个 PS 的 WebP 插件，看上去还行，但是用下来 100 有损都有肉眼可见失真，然后又找到 [智图](https://zhitu.isux.us/)，用下来感觉还行，图片品质直接用它默认给的基本没问题，有一点点失真，个别特别讲究的图片可以用 JPEG 格式，也不是大。图床暂时用的阿里云 OSS，CDN 啥的还没折腾。
+
 ### 主题
+
 Yun 这个主题还是有点稚嫩，好多细节没做好，比如压根不支持带暗色的背景。我 Fork 下来改了好多地方，就当学习了吧。

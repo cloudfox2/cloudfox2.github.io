@@ -1,8 +1,8 @@
 ---
 title: 测试文章
 date: 2020-05-04 16:38:04
-tags: 测试标签
-categories: 测试分类
+categories: 网站
+tags: 
 ---
 
 <!-- more -->
@@ -20,14 +20,15 @@ _+{}|<>/-=
 永東國酬愛鬱靈鷹袋三力今
 
 The quick brown fox jumps over the lazy dog.
+THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
 
 いろはにほへと ちりぬるを
 わかよたれそ つねならむ
 うゐのおくやま けふこえて
 あさきゆめみし ゑひもせす
 
-😂😆🤬👻🐱🐶💫⭐️🌟✨⚡️☄️💥🌈☁️🦊
-❤️🧡💛💚💙💜🖤💔❣️💕💞💓💗💖💘💝
+😂😆👻🐱🐶💫⭐️🌟✨⚡️☄️💥🌈☁️🦊
+❤️🧡💛💚💙💜🖤❣️💕💞💓💗💖💘💝
 
 [链接](#)
 
@@ -35,15 +36,23 @@ The quick brown fox jumps over the lazy dog.
 
 **南去經三國，東來過五湖**
 
+~~南去經三國，東來過五湖~~
+
 ```swift
 //南去經三國，東來過五湖
 //The quick brown fox jumps over the lazy dog.
+//THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
 //☁️🦊
 for i in 1...10 {
     let foo = i
     print(foo)
 }
 ```
+
+| 表头 | 表头 | 表头 |
+| :-- | :-:  | --: |
+| 单元格 | 单元格 | 单元格 |
+| 单元格 | 单元格 | 单元格 |
 
 ![图片](https://cf0.oss-cn-shanghai.aliyuncs.com/blog/test.webp)_图片注释_
 

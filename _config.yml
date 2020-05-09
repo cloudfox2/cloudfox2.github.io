@@ -108,7 +108,9 @@ theme: yun
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:cloudfox2/cloudfox2.github.io.git
+  repo: 
+    github: git@github.com:cloudfox2/cloudfox2.github.io.git
+    gitee: git@gitee.com:cloudfox2/cloudfox2.git
   branch: master
   message: update
 

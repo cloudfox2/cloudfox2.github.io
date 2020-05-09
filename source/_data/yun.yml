@@ -196,3 +196,6 @@ valine:
   # requiredFields:
   #   - nick
   #   - mail
+
+pjax:
+  enable: true

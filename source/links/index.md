@@ -2,7 +2,7 @@
 layout: links
 title: 如水
 date: 2019-06-21 13:06:06
-description: 君子之交淡如水，小人之交甘若醴。
+description: 君子之交淡如水。
 comments: true
 keywords: 
   - link

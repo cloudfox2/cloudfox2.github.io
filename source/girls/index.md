@@ -1,7 +1,7 @@
 ---
 layout: girls
 title: 朱颜
-banner: 最是人间留不住，朱颜辞镜花辞树。
+banner: 最是人间留不住，朱颜辞镜花辞树
 girls:
   - name: 博麗霊夢
     avatar: https://cf0.oss-cn-shanghai.aliyuncs.com/blog/reimu.webp

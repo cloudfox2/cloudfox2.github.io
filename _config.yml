@@ -113,6 +113,8 @@ deploy:
     gitee: git@gitee.com:cloudfox2/cloudfox2.git
   branch: master
   message: update
+  name: cloudfox
+  email: 348868282@qq.com
 
 # 插件
 

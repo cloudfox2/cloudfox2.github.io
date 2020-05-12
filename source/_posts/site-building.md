@@ -56,7 +56,7 @@ WordPress 我是直接 pass 了，个人还是倾向新的技术，然后就选�
 反正我最后是搞了个 `cf1.me`，比较短也很便宜，没什么特别的意思，就是云狐的英文 cloudfox 的首字母加个 1，当然有数字确实不是很好看，不说了，我 GithubID 更难看（早知道早点注册 Github 了）。
 写本文的时候才发现 dynadot 最近搞 [活动](https://www.dynadot.com/resumeboost?utm_source=Search%20Domain%20Text&utm_medium=Resume%20Boost%20Even%20Flow&utm_campaign=Resume%20Boost%202020&drefid=148)，8 个顶级域名免费 1 年，又去白嫖了一个。  
 国内基本没有 dynadot 的资料（当然官方文档也挺全的，又有中文，应该没什么障碍），所以放下我的 DNS 配置，可以参考下，我配了一个 www 子域名跳转主域名的，好像还可以弄个邮箱跳转的，没研究出来。
-![DNS配置](https://cf0.oss-cn-shanghai.aliyuncs.com/img/20200502003941.png)
+![DNS配置](https://i.loli.net/2020/05/11/igBsPz7TSZRqJVt.png)
 免费 SSL 也可以开下，开了就能用 HTTPS 了，GitHub 那边也要设置下。
 
 ## 建站

@@ -15,7 +15,8 @@ font:
     family: "'Noto Serif SC', serif"
     weight: 700
   sans_serif:
-    family: "-apple-system, BlinkMacSystemFont, 'Noto Sans', 'Helvetica Now', 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans CJK SC', 'Source Han Sans SC', 'Source Han Sans CN', 'Microsoft YaHei', 'Wenquanyi Micro Hei', 'WenQuanYi Zen Hei', 'ST Heiti', SimHei, 'WenQuanYi Zen Hei Sharp', sans-serif"
+    # family: "monospace, -apple-system, BlinkMacSystemFont, 'Noto Sans', 'Helvetica Now', 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans CJK SC', 'Source Han Sans SC', 'Source Han Sans CN', 'Microsoft YaHei', 'Wenquanyi Micro Hei', 'WenQuanYi Zen Hei', 'ST Heiti', SimHei, 'WenQuanYi Zen Hei Sharp', sans-serif"
+    family: "monospace, sans-serif"
     weight: 400
   monospace:
     family: "Consolas, Menlo, 'Fira Code', 'Source Code Pro', monospace"
@@ -198,4 +199,4 @@ valine:
   #   - mail
 
 pjax:
-  enable: true
+  enable: false

@@ -11,9 +11,12 @@ tags: 博客
 折腾的时候又逛了一堆博客，以前不太逛这些个人博客的，除了 Matrix67、王垠、阮一峰等大佬可能看的比较多一点，感觉又打开了新世界的大门，我本以为我打开的门够多了。主要在逛 [木子](https://blog.k8s.li) 大佬收录的博客。
 然后又找到好多好东西，比如 [Dism++](https://www.chuyu.me/zh-Hans)，Win10 一堆小毛病都给整舒服了；[Geek Uninstaller](https://geekuninstaller.com)，彻底卸载软件用的；还有个不让宣传就不说了。
 
+<!-- more -->
+
 ## 前端相关
 
 前端每一项东西都有讲究，我又是完美主义，又看了好多资料折腾好久，以前也没了解过这方面。
+
 - [Slant](https://www.slant.co)：可以缓解选择困难，虽然仅供参考，但至少把选项列出来了。
 - [Can I use](https://caniuse.com)：前端各种东西的兼容性情况。
 - [PageSpeed Insight](https://developers.google.com/speed/pagespeed/insights/?hl=zh-cn)：谷歌的网站性能分析。
@@ -22,7 +25,7 @@ tags: 博客
 
 ### 字体
 
-字体最后是配成了这样，其实 `sans_serif` 直接配成 `sans-serif` 也没什么太大区别，主要就中文字体的英文部分稍微难看了点。以前我特别讨厌宋体，感觉丑哭了，后来发现打印在纸上宋体要好看很多，我才明白宋体适合印刷，黑体适合屏显。
+字体最后是配成了这样。以前我特别讨厌宋体，感觉丑哭了，后来发现打印在纸上宋体要好看很多，我才明白宋体适合印刷，黑体适合屏显。
 
 ```yml
 font:
@@ -30,7 +33,7 @@ font:
     family: "'Noto Serif SC', serif"
     weight: 700
   sans_serif:
-    family: "-apple-system, BlinkMacSystemFont, 'Noto Sans', 'Helvetica Now', 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans CJK SC', 'Source Han Sans SC', 'Source Han Sans CN', 'Microsoft YaHei', 'Wenquanyi Micro Hei', 'WenQuanYi Zen Hei', 'ST Heiti', SimHei, 'WenQuanYi Zen Hei Sharp', sans-serif"
+    family: "monospace, sans-serif"
     weight: 400
   monospace:
     family: "Consolas, Menlo, 'Fira Code', 'Source Code Pro', monospace"
@@ -63,7 +66,7 @@ font:
 
 基本的图片处理我倒是没问题，不过听说 WebP 格式很小很快，又去折腾 WebP 格式，一开始找到个 PS 的 WebP 插件，看上去还行，但是用下来 100 有损都有肉眼可见失真，然后又找到智图，用下来感觉还行，图片品质直接用它默认给的基本没问题，还有个 picdiet。
 图片目前准备主页图片用阿里云 OSS，文章图片用 SM.MS 图床，用智图压缩为 WebP 格式，Safari 不支持 WebP 就去死好了，只要人人都用 WebP，你看他还敢不支持吗？
-上传用 PicGo，目前 PicGo 传 SM.MS 还要装个 SMMS 插件（好像下个版本会直接支持），说实话有点离谱，一个单纯上传图片到图床的工具居然还有插件。
+上传用 PicGo，目前 PicGo 传 SM.MS 还要装个 SMMS 插件（好像下个版本会直接支持），说实话有点离谱，一个单纯上传图片到图床的工具居然还有插件。(刚发现 SM.MS 不支持 WebP，明明选的时候支持好多格式。)
 
 - [智图](https://zhitu.isux.us)：在线压缩，支持各种格式，可以原格式压缩或 WebP 格式压缩，压缩效果良好。
 - [picdiet](https://www.picdiet.com/zh-cn)：纯 JS 在线压缩算法，只支持 JPG 和 JPEG 格式，压缩率接近 WebP，速度也很快，感觉对大图效果比较好，小图的失真比较明显。
@@ -80,9 +83,11 @@ Gravatar 头像接口，目前正常的几个 Gravatar 头像接口（后缀接�
 - <http://gravatar.com/avatar/> 慢，官方接口
 
 QQ 头像接口：
+
 - <http://q1.qlogo.cn/g?b=qq&nk=[QQ号]&s=640>
 
 Gravatar + QQ 头像接口，快，[这个域名](https://www.alapi.net) 还有很多其他接口：
+
 - <https://v1.alapi.cn/api/avatar?email=[邮箱或QQ号]&size=250>
 
 ### 短链接

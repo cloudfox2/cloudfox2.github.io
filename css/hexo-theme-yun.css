@@ -484,17 +484,18 @@ body::before {
   line-height: 0;
 }
 #animate {
-  animation: iconAnimate 1.33s ease-in-out infinite;
+  animation: spin 2s infinite linear;
+  transform-origin: 53% 45%;
 }
 .with-love {
   display: inline-block;
   margin: 5px 5px 0 5px;
-  color: #85A5FF;
+  color: #303133;
 }
 .moe-text {
   margin: 0 5px;
 }
-@-moz-keyframes iconAnimate {
+@-moz-keyframes pulse {
   0%, 100% {
     transform: scale(1);
   }
@@ -508,7 +509,7 @@ body::before {
     transform: scale(1.1);
   }
 }
-@-webkit-keyframes iconAnimate {
+@-webkit-keyframes pulse {
   0%, 100% {
     transform: scale(1);
   }
@@ -522,7 +523,7 @@ body::before {
     transform: scale(1.1);
   }
 }
-@-o-keyframes iconAnimate {
+@-o-keyframes pulse {
   0%, 100% {
     transform: scale(1);
   }
@@ -536,7 +537,7 @@ body::before {
     transform: scale(1.1);
   }
 }
-@keyframes iconAnimate {
+@keyframes pulse {
   0%, 100% {
     transform: scale(1);
   }
@@ -548,6 +549,46 @@ body::before {
   }
   50%, 70% {
     transform: scale(1.1);
+  }
+}
+@-moz-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-o-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
   }
 }
 .hty-layout-grid {

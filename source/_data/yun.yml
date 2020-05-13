@@ -95,10 +95,9 @@ fireworks:
 footer:
   since: 2020
   icon:
-    name: fas fa-yin-yang # fa-spin # fas fa-heartbeat # icon-cloud-line
-    animated: true
+    name: fas fa-yin-yang fa-spin # fas fa-heartbeat # icon-cloud-line
+    animated: false
     animation: spin # pulse
-    center: "53% 45%"
     color: "#303133" # #2F54EB #EB3323 #85A5FF
 
 archive:
@@ -140,16 +139,8 @@ head:
     async:
     defer:
 
-cdn:
-  # pre: https://cdn.jsdelivr.net/gh/cloudfox2/cloudfox2.github.io@latest
-  pre: ""
-  css:
-  js:
-    base:
-    async:
-      # 默认引入的图标资源，使用 iconfont
-      iconfont: //at.alicdn.com/t/font_1140697_asgm6pccckc.js
-    defer:
+# cdn:
+#   pre: https://cdn.jsdelivr.net/gh/cloudfox2/cloudfox2.github.io@latest
 
 say:
   enable: true

@@ -95,9 +95,9 @@ fireworks:
 footer:
   since: 2020
   icon:
-    name: icon-cloud-line
+    name: fas fa-heartbeat # icon-cloud-line
     animated: true
-    color: "#85A5FF"
+    color: "#EB3323" # #85A5FF
 
 archive:
   last_word: '以上'
@@ -130,8 +130,24 @@ social:
     icon: icon-telegram-line
     color: "#0088CC"
 
-# cdn:
-#   pre: https://cdn.jsdelivr.net/gh/cloudfox2/cloudfox2.github.io@latest
+head:
+  css:
+    fortawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
+  js:
+    base:
+    async:
+    defer:
+
+cdn:
+  # pre: https://cdn.jsdelivr.net/gh/cloudfox2/cloudfox2.github.io@latest
+  pre: ""
+  css:
+  js:
+    base:
+    async:
+      # 默认引入的图标资源，使用 iconfont
+      iconfont: //at.alicdn.com/t/font_1140697_asgm6pccckc.js
+    defer:
 
 say:
   enable: true

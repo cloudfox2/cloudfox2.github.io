@@ -95,9 +95,11 @@ fireworks:
 footer:
   since: 2020
   icon:
-    name: fas fa-heartbeat # icon-cloud-line
+    name: fas fa-yin-yang # fa-spin # fas fa-heartbeat # icon-cloud-line
     animated: true
-    color: "#EB3323" # #85A5FF
+    animation: spin # pulse
+    center: "53% 45%"
+    color: "#303133" # #2F54EB #EB3323 #85A5FF
 
 archive:
   last_word: '以上'

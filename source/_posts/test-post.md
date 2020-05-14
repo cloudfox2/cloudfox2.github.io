@@ -220,6 +220,7 @@ MD 的表格在源码里怎么写都不好看，虽然有插件可以对齐，�
 
 - [Lorem ipsum](https://zh.wikipedia.org/wiki/Lorem_ipsum)：乱数假文，常用于排版设计。
 - [中文假文產生器](https://textgen.cqd.tw/)
+- [标准测试项目](https://zh.wikipedia.org/wiki/Template:%E6%A0%87%E5%87%86%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE)
 
 ## 结语
 

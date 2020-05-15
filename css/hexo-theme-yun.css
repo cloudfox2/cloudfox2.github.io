@@ -483,10 +483,6 @@ body::before {
   margin-top: 0.3rem;
   line-height: 0;
 }
-#animate {
-  animation: spin 2s infinite linear;
-  transform-origin: 53% 45%;
-}
 .with-love {
   display: inline-block;
   margin: 5px 5px 0 5px;

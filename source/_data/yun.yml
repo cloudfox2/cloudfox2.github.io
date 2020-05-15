@@ -1,3 +1,10 @@
+head:
+  css:
+    fortawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
+
+# cdn:
+#   pre: https://cdn.jsdelivr.net/gh/cloudfox2/cloudfox2.github.io@latest
+
 colors:
   primary: "#2F54EB"
   bg: "#bae7ff"
@@ -15,7 +22,6 @@ font:
     family: "'Noto Serif SC', serif"
     weight: 700
   sans_serif:
-    # family: "monospace, -apple-system, BlinkMacSystemFont, 'Noto Sans', 'Helvetica Now', 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans CJK SC', 'Source Han Sans SC', 'Source Han Sans CN', 'Microsoft YaHei', 'Wenquanyi Micro Hei', 'WenQuanYi Zen Hei', 'ST Heiti', SimHei, 'WenQuanYi Zen Hei Sharp', sans-serif"
     family: "monospace, sans-serif"
     weight: 400
   monospace:
@@ -25,91 +31,37 @@ favicon: /favicon.ico
 
 bg_image:
   enable: true
-  #url: https://cdn.jsdelivr.net/gh/cloudfox2/cloudfox2.github.io@latest/
   url: https://cf0.oss-cn-shanghai.aliyuncs.com/blog/bg.jpg
   opacity: 1
 
 sidebar:
   bg_image: https://cf0.oss-cn-shanghai.aliyuncs.com/blog/bg_sidebar.webp
   bg_position: bottom left
-  # bg_position: bottom 3rem center
 
 search:
   bg_image: https://cf0.oss-cn-shanghai.aliyuncs.com/blog/bg_search.webp
-  # placeholder: 
 
 banner:
   enable: true
   title: 雲狐之境
-  src: /js/ui/banner.js
-  cloud: true
-  go_down:
-    enable: true
-    icon: icon-arrow-down-s-line
+
+say:
+  enable: true
+  api: /data/sentences.json
+  src: /js/say.js
+  hitokoto:
+    enable: false
 
 avatar:
-  enable: true
   url: https://cf0.oss-cn-shanghai.aliyuncs.com/blog/avatar.webp
-  rounded: true
-  opacity: 1
-  mickey_mouse: false
 
 menu:
-  home:
-    path: /
-    icon: icon-home-4-line
-  archives:
-    path: /archives
-    icon: icon-archive-line
-  tags:
-    path: /tags
-    icon: icon-price-tag-3-line
-  categories:
-    path: /categories
-    icon: icon-folder-2-line
   custom:
     title: 留言
     path: /about/#comment
     icon: icon-clipboard-line
 
-pages:
-  - name: 如水
-    url: /links/
-    icon: icon-genderless-line
-    color: dodgerblue
-  - name: 朱颜
-    url: /girls/
-    icon: icon-women-line
-    color: hotpink
-  
-girls:
-  enable: true
-
-fireworks:
-  enable: true
-  colors:
-    - "102, 167, 221"
-    - "62, 131, 225"
-    - "33, 78, 194"
-
-footer:
-  since: 2020
-  icon:
-    name: fas fa-yin-yang fa-spin # fas fa-heartbeat # icon-cloud-line
-    animated: false
-    animation: spin # pulse
-    color: "#303133" # #2F54EB #EB3323 #85A5FF
-
-archive:
-  last_word: '以上'
-
 social:
-  # - name: RSS
-  #   # set rss in your root config
-  #   # https://github.com/hexojs/hexo-generator-feed
-  #   link: atom.xml # config.feed.path
-  #   icon: icon-rss-line
-  #   color: orange
   - name: QQ
     link: https://wpa.qq.com/msgrd?v=3&uin=348868282&site=qq&menu=yes
     icon: icon-qq-line
@@ -131,81 +83,58 @@ social:
     icon: icon-telegram-line
     color: "#0088CC"
 
-head:
-  css:
-    fortawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
-  js:
-    base:
-    async:
-    defer:
-
-# cdn:
-#   pre: https://cdn.jsdelivr.net/gh/cloudfox2/cloudfox2.github.io@latest
-
-say:
+pages:
+  - name: 如水
+    url: /links/
+    icon: icon-genderless-line
+    color: dodgerblue
+  - name: 朱颜
+    url: /girls/
+    icon: icon-women-line
+    color: hotpink
+  
+girls:
   enable: true
-  api: /data/sentences.json
-  src: /js/say.js
-  # https://developer.hitokoto.cn/sentence/
-  hitokoto:
-    enable: false
-    api: https://v1.hitokoto.cn
 
-symbols_count_time:
-  item_text_post: true
-  item_text_total: true
-  awl: 2
-  wpm: 250
+footer:
+  since: 2020
+  icon:
+    name: fas fa-yin-yang fa-spin # fas fa-heartbeat
+    animated: false
+    animation: spin # pulse
+    color: "#303133" # #EB3323
+
+archive:
+  last_word: '以上'
 
 engine_search:
   enable: false
 
 local_search:
   enable: true
-  src: /js/search/local-search.js
 
 reward_settings:
   enable: false
-  icon: icon-hand-coin-line
-  comment: 听君一席话，胜读十年书
 
 comment:
   enable: true
   tips:
-    # - 若您无 GitHub 账号，可直接在下方评论。
-    # - 若您想及时得到回复提醒，建议跳转 GitHub Issues 评论。
-    # - 若没有本文 Issue，您可以使用 Comment 模版新建。
 
 github_issues:
   enable: false
-  username: cloudfox2
-  repository: cloudfox2.github.io
-  filters: is:issue
 
 valine:
   enable: true
   appId: xniScjvwPxO3ivBW25ReiHWe-MdYXbMMI
   appKey: MEIJgTbrcF7NTqWDr48je6OP
-  placeholder: 加入讨论... # comment box placeholder
-  avatar: mp # gravatar style
+  placeholder: 加入讨论...
+  avatar: mp
   meta:
     - nick
     - mail
     - link
-  pageSize: 10 # pagination size
-  visitor: true # 访问量统计
-  visitor_index: false #主页访问量统计
+  pageSize: 10
+  visitor: true
+  visitor_index: false
   recordIP: true
-  # serverURLs:
-  # Emoji See: https://valine.js.org/emoji.html
-  # emojiCDN: //i0.hdslb.com/bfs/emote/
-  # emojiMaps:
-  #   tv_doge: 6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png
-  #   more...
   enableQQ: true
-  # requiredFields:
-  #   - nick
-  #   - mail
-
-pjax:
-  enable: false

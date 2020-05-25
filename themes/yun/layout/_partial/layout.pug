@@ -13,9 +13,9 @@ html(lang=config.language)
     meta(name="copyright" content=copyright)
     !=meta_generator()
     meta(name='theme' content="hexo-theme-yun")
+    //- meta(property='og:image' content=theme.avatar.url)
+    meta(name='twitter:image' content=theme.avatar.url)
     !=open_graph()
-    meta(property='og:image' content=theme.avatar.url)
-    //- meta(name='twitter:image' content=theme.avatar.url)
     - page_title(page)
     if page.title
       title=page.title + ' | ' + title

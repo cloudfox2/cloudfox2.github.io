@@ -62,26 +62,30 @@ menu:
     icon: icon-clipboard-line
 
 social:
-  - name: QQ
-    link: https://wpa.qq.com/msgrd?v=3&uin=348868282&site=qq&menu=yes
-    icon: icon-qq-line
-    color: "#12B7F5"
   - name: GitHub
     link: https://github.com/cloudfox2
     icon: icon-github-line
     color: "#181717"
-  - name: E-Mail
-    link: mailto:348868282@qq.com
-    icon: icon-mail-line
-    color: "#8E71C1"
-  - name: bilibili
-    link: https://space.bilibili.com/353913
-    icon: icon-bilibili-line
-    color: "#FF8EB3"
+  - name: QQ
+    link: https://wpa.qq.com/msgrd?v=3&uin=348868282&site=qq&menu=yes
+    icon: icon-qq-line
+    color: "#12B7F5"
   - name: Telegram
     link: https://t.me/cloudfox2
     icon: icon-telegram-line
     color: "#0088CC"
+  - name: bilibili
+    link: https://space.bilibili.com/353913
+    icon: icon-bilibili-line
+    color: "#FF8EB3"
+  - name: E-Mail
+    link: mailto:348868282@qq.com
+    icon: icon-mail-line
+    color: "#8E71C1"
+  - name: POPI
+    link: https://www.popiask.cn/cloudfox
+    icon: icon-questionnaire-line
+    color: "#525252"
 
 pages:
   - name: 如水

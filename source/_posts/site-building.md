@@ -51,7 +51,7 @@ WordPress 我是直接 pass 了，个人还是倾向新的技术，然后就选�
 如果你想了解域名是如何跟你的网站联系在一起的，可以参考 [DNS 原理入门](https://www.ruanyifeng.com/blog/2016/06/dns.html)。
 如果你想了解为什么买一个没人用的域名要花钱，花的钱到谁手里了，可以参考 [根域名的知识](https://www.ruanyifeng.com/blog/2018/05/root-domain.html)。
 如果你想了解有哪些顶级域名的话，可以参考 [全部顶级域名列表](http://www.iana.org/domains/root/db)，当然很多域名是不开放注册的。
-通常心仪的域名 99%已经被抢了，也没办法，都 2020 年了，域名要是实在选不出来，暂时不买也不影响建站，静态的用 xxx.github.io 就好，不是静态的就直接用 IP。
+通常心仪的域名 99% 已经被抢了，也没办法，都 2020 年了，域名要是实在选不出来，暂时不买也不影响建站，静态的用 xxx.github.io 就好，不是静态的就直接用 IP。
 
 反正我最后是搞了个 `cf1.me`，比较短也很便宜，没什么特别的意思，就是云狐的英文 cloudfox 的首字母加个 1，当然有数字确实不是很好看，不说了，我 GithubID 更难看（早知道早点注册 Github 了）。
 写本文的时候才发现 dynadot 最近搞 [活动](https://www.dynadot.com/resumeboost?utm_source=Search%20Domain%20Text&utm_medium=Resume%20Boost%20Even%20Flow&utm_campaign=Resume%20Boost%202020&drefid=148)，8 个顶级域名免费 1 年，又去白嫖了一个。  

@@ -78,10 +78,14 @@ social:
     link: https://space.bilibili.com/353913
     icon: icon-bilibili-line
     color: "#FF8EB3"
-  - name: E-Mail
-    link: mailto:348868282@qq.com
-    icon: icon-mail-line
-    color: "#8E71C1"
+  - name: RSS
+    link: /atom.xml # config.feed.path
+    icon: icon-rss-line
+    color: orange
+  # - name: E-Mail
+  #   link: mailto:348868282@qq.com
+  #   icon: icon-mail-line
+  #   color: "#8E71C1"
   - name: POPI
     link: https://www.popiask.cn/cloudfox
     icon: icon-questionnaire-line

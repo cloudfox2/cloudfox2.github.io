@@ -201,7 +201,7 @@ Menlo：Mac 用，唯一意见是`l`看着重心不稳，这个的`*`的倒是�
 Source Code Pro：中规中矩，`0il`感觉很怪，但是免费开源，请注意 Consolas 和 Menlo 不开源也不免费。
 Fira Code：重点是符号连字，适合装逼，`gr`感觉也很难看，免费开源。
 
-函数是快速排序在 Swift 中的简单实现（只是我随手选的），效率并不高，更高效的算法可参考[Swift 算法俱乐部](https://github.com/andyRon/swift-algorithm-club-cn/tree/master/Quicksort)，当然 Swift 中最高效的是 `list.sort() { $0 < $1 }`。
+函数是快速排序在 Swift 中的简单实现（只是我随手选的），效率并不高，更高效的算法可参考 [Swift 算法俱乐部](https://github.com/andyRon/swift-algorithm-club-cn/tree/master/Quicksort)，当然 Swift 中最高效的是 `list.sort() { $0 < $1 }`。
 
 ### 表格
 

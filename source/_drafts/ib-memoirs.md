@@ -1,7 +1,7 @@
 ---
 title: IB 回忆录
 date: 2020-07-31 10:57:49
-categories: 流年碎影
+categories: 回忆
 tags: IB
 ---
 

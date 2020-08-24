@@ -27,7 +27,6 @@ date: 2020-05-04 17:17:46
 - ZUN
 - Psyris
 - Monty Oum (R.I.P.)
-- Toby Fox
 - 宫崎骏
 
 ### [你这辈子活着是为了什么？](https://www.zhihu.com/question/20054842/answer/14239275)

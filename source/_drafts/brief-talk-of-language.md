@@ -1,7 +1,7 @@
 ---
 title: 浅谈「语言」
 date: 2020-06-19 16:25:48
-categories: 随笔
+categories: 文章
 tags: 
 ---
 
@@ -44,7 +44,7 @@ tags:
 
 ## 萨丕尔-沃夫假说
 
-[据说](https://www.zhihu.com/question/21810457) 在学术界强假说已被实验否定，弱假说也有较大争议。但我觉得
+[据说](https://www.zhihu.com/question/21810457) 在学术界强假说已被实验否定，弱假说也有较大争议。
 
 ## 污名化
 

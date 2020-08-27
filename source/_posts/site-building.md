@@ -1,7 +1,7 @@
 ---
 title: 建站小结
 date: 2020-04-28 18:30:51
-categories: 网站
+categories: 极客
 tags: 博客
 ---
 

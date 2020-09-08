@@ -22,7 +22,7 @@ font:
     family: "'Noto Serif SC', serif"
     weight: 700
   sans_serif:
-    family: "monospace, sans-serif"
+    family: "monospace, 'PingFang SC', 'Microsoft YaHei', sans-serif"
     weight: 400
   monospace:
     family: "Consolas, Menlo, 'Fira Code', 'Source Code Pro', monospace"

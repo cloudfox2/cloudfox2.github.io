@@ -86,7 +86,7 @@ QQ 头像接口：
 
 - <http://q1.qlogo.cn/g?b=qq&nk=[QQ号]&s=640>
 
-Gravatar + QQ 头像接口，快，[这个域名](https://www.alapi.net) 还有很多其他接口：
+Gravatar + QQ 头像接口，快，[这里](https://www.alapi.net) 还有很多其他接口：
 
 - <https://v1.alapi.cn/api/avatar?email=[邮箱或QQ号]&size=250>
 

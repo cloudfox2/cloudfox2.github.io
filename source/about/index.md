@@ -9,7 +9,7 @@ date: 2020-05-04 17:17:46
 
 数学系，程序员，精简主义，热爱游戏。
 
-> 游戏是程序和艺术的顶点。
+> 游戏是程序和艺术的顶峰。
 
 性格：[INTJ-A](https://www.16personalities.com/profiles/dcde81c65840a)
 职业：App 开发，独立负责 Android + iOS，也写过 C# WinForm 和维护过后端。

@@ -67,7 +67,7 @@ QQ 机器人，不禁让我想起曾经的萌娘回路、[猫谜绘音](https://
 
 ### 功能
 
-随便整了点功能，主要还是框架本身有的功能。
+随便整了点功能，主要还是框架本身有的功能，别的功能都是在写在自定义插件里。
 
 - 天气：xxx天气
 - 翻译：翻译xxx（其他语言→中）
@@ -84,13 +84,46 @@ QQ 机器人，不禁让我想起曾经的萌娘回路、[猫谜绘音](https://
 
 ### API
 
-//TODO
+接 API 的功能代码差不多都是这种结构：
+
+```js
+  mirai.on("message", async (msg) => {
+    if (!re(msg.plain, "^foo")) {
+      return
+    }
+    let content = msg.plain.split("foo")[1].trim()
+    var url = "https://foo.bar?foo="
+    if (content.length > 0) {
+      url += encodeURI(content)
+    } else {
+      return
+    }
+    const { data } = await axios.get(url)
+      .catch(function (error) {
+        console.log(error.response.data)
+        msg.reply(error.response.data.msg)
+        return
+      })
+    msg.reply(`${data.foo.bar}`)
+  })
+```
 
 天气、翻译、短链：
 
 - [ALAPI](https://www.alapi.net/)
 
 壁纸：
+
+只是发个网络图片的话用应答就可以了。
+
+```yml
+  - re: 来点壁纸
+    reply:
+      - type: Plain
+        text: 让我找找~
+      - type: Image
+        url: https://api.addesp.com/image/wallpaper/acg
+```
 
 - [ADD-SP](https://www.addesp.com/archives/329)：<https://api.addesp.com/image/wallpaper/acg>
 

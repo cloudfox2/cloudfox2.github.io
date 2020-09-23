@@ -2,7 +2,7 @@
 title: 关于 QQ 机器人
 date: 2020-09-16 17:39:00
 categories: 极客
-tags: QQ机器人
+tags: QQ 机器人
 ---
 
 ## [el-bot](https://www.yunyoujun.cn/note/make-el-bot/)
@@ -49,6 +49,22 @@ QQ 机器人，不禁让我想起曾经的萌娘回路、[猫谜绘音](https://
   
 说起来我也在绘板画过几幅作品，主要是临摹吧，之前也从来没画过画。
 
+![RWBY](https://i.loli.net/2020/09/23/HJSGj3FaUORhKd8.png)
+
+![RWBY原图](https://i.loli.net/2020/09/23/I2PEhMHXdVf7q69.jpg)_原图_
+
+纯粹临摹（简直是照着描）的图，月亮还是用按键精灵画的，因为画笔放不到那么大。
+
+![赫卡特](https://i.loli.net/2020/09/23/igulN72SbqtpFDj.png)
+
+赫卡特，想试着自己画一下背景结果画成了这鸟样，想画的是站在悬崖上看日出的样子，结果好像是把人物跟小学生画作拼在一起似的。
+
+![马上有灵梦](https://i.loli.net/2020/09/23/TAYLG8w3EiXnNlO.jpg)
+
+14 年马年春节前画的，主要也是临的（PID：18920920），这个是用 SAI 画的了，总算有多图层了，整整用鼠标勾了一个星期，累死了，结果还凑合吧，勉强能看。
+
+之后也再没画过画了，真要画也得弄个板子，鼠标和钢笔拉出来的线条根本没得灵魂。
+
 ### 功能
 
 随便整了点功能，主要还是框架本身有的功能。
@@ -67,6 +83,8 @@ QQ 机器人，不禁让我想起曾经的萌娘回路、[猫谜绘音](https://
 - RSS 订阅
 
 ### API
+
+//TODO
 
 天气、翻译、短链：
 
@@ -110,13 +128,15 @@ function xmur3(str) {
 RSS 是个好东西，远离国内局域网的好工具，虽然我以前也不用，用机器人订阅倒是挺不错的。
 说到 RSS 当然不得不提 [DIYgod](https://diygod.me/) 的 [RSShub](https://rsshub.app/) 了（万物皆可 RSS），如今已被墙了，我试图 [配置 Mac 终端的代理](https://www.yfmingo.cn/2018/06/29/mac-terminal-shadowsocks/)：
 
-npm代理：
+npm 代理：
+
 ```bash
 npm config set proxy=http://127.0.0.1:1087
 npm config set https-proxy=http://127.0.0.1:1087
 ```
 
 删除代理：
+
 ```bash
 npm config delete proxy
 npm config delete https-proxy

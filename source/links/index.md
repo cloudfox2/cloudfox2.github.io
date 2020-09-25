@@ -35,7 +35,7 @@ tip: 加载中
 
 ### 不才
 
-```a
+```yml
 url: https://cf1.me
 avatar: https://bit.ly/2SJNVB5
 name: 云狐

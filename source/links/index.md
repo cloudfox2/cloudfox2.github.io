@@ -40,6 +40,5 @@ url: https://cf1.me
 avatar: https://bit.ly/2SJNVB5
 name: 云狐
 blog: 云狐之境
-desc: 谁见幽人独往来，缥缈孤鸿影。
 color: "#2F54EB"
 ```

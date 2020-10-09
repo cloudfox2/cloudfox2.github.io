@@ -1,5 +1,5 @@
 ---
-title: 浅谈「语言」
+title: 浅谈语言
 date: 2020-06-19 16:25:48
 categories: 文章
 tags: 

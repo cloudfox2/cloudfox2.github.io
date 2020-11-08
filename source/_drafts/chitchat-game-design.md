@@ -1,7 +1,7 @@
 ---
 title: 浅谈游戏设计
 date: 2020-11-05 18:00:00
-categories: 文章
+categories: 游戏
 tags: 
 ---
 

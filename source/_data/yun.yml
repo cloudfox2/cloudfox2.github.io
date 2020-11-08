@@ -5,9 +5,6 @@ head:
 cdn:
   pre: https://cdn.jsdelivr.net/gh/cloudfox2/cloudfox2.github.io
 
-custom:
-  style: source/_data/style/*
-
 colors:
   primary: "#2F54EB"
   bg: "#bae7ff"

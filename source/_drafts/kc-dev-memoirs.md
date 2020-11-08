@@ -1,7 +1,7 @@
 ---
 title: 回首「皇家争霸」开发历程
 date: 2020-12-01 08:00:00
-categories: 文章
+categories: 游戏
 tags: 
 ---
 

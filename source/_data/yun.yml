@@ -86,10 +86,10 @@ social:
   #   link: mailto:348868282@qq.com
   #   icon: icon-mail-line
   #   color: "#8E71C1"
-  - name: POPI
-    link: https://www.popiask.cn/cloudfox
-    icon: icon-questionnaire-line
-    color: "#525252"
+  # - name: POPI
+  #   link: https://www.popiask.cn/cloudfox
+  #   icon: icon-questionnaire-line
+  #   color: "#525252"
 
 pages:
   - name: 如水

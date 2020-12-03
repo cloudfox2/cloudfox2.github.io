@@ -38,7 +38,7 @@
   text-align: center;
 }
 body {
-  font-family: monospace, sans-serif;
+  font-family: monospace, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-weight: 400;
   color: #2e405b;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.04);

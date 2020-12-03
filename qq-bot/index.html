@@ -1,0 +1,178 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#2F54EB"><meta name="author" content="云狐"><meta name="copyright" content="云狐"><meta name="generator" content="Hexo 4.2.0"><meta name="theme" content="hexo-theme-yun"><meta name="twitter:image" content="https://cf0.oss-cn-shanghai.aliyuncs.com/blog/avatar.webp"><meta name="description" content="el-bot云游君整了个 QQ 机器人，挺有兴趣的就也整了一个，部署的时候折腾了好一会儿，甚至远程求助，总算是接上了，最后还是部署在 Mac 上了，Win 上问题挺多的，现在大概好一点，我用的还是 0.1 的版本，现在已经到 0.5 了，懒得更新了，反正也不需要啥新功能。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="QQ 机器人">
+<meta property="og:url" content="https://cf1.me/qq-bot/">
+<meta property="og:site_name" content="云狐之境">
+<meta property="og:description" content="el-bot云游君整了个 QQ 机器人，挺有兴趣的就也整了一个，部署的时候折腾了好一会儿，甚至远程求助，总算是接上了，最后还是部署在 Mac 上了，Win 上问题挺多的，现在大概好一点，我用的还是 0.1 的版本，现在已经到 0.5 了，懒得更新了，反正也不需要啥新功能。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2020/10/06/5n9HrXb4IZUDWiV.png">
+<meta property="og:image" content="https://i.loli.net/2020/09/23/HJSGj3FaUORhKd8.png">
+<meta property="og:image" content="https://i.loli.net/2020/09/23/igulN72SbqtpFDj.png">
+<meta property="og:image" content="https://i.loli.net/2020/09/23/TAYLG8w3EiXnNlO.jpg">
+<meta property="article:published_time" content="2020-09-24T15:39:00.000Z">
+<meta property="article:modified_time" content="2020-11-18T03:29:35.014Z">
+<meta property="article:author" content="云狐">
+<meta property="article:tag" content="QQ 机器人">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2020/10/06/5n9HrXb4IZUDWiV.png"><title>QQ 机器人 | 云狐之境</title><link rel="shortcut icon" href="/favicon.ico"><link rel="mask-icon" href="/favicon.ico" color="#2F54EB"><link rel="preload" href="https://cdn.jsdelivr.net/gh/cloudfox2/cloudfox2.github.io/css/hexo-theme-yun.css" as="style"><link rel="preload" href="https://cdn.jsdelivr.net/gh/cloudfox2/cloudfox2.github.io/js/hexo-theme-yun.js" as="script"><link rel="prefetch" href="https://cdn.jsdelivr.net/gh/cloudfox2/cloudfox2.github.io/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cloudfox2/cloudfox2.github.io/css/hexo-theme-yun.css"><link rel="alternate" href="/atom.xml" title="云狐之境"><script id="yun-config">
+    window.CONFIG = {"root":"/","title":"雲狐之境","version":"0.7.0","anonymous_image":"https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg","say":{"api":"/data/sentences.json"},"local_search":{"path":"/search.xml"},"fireworks":{"colors":["102, 167, 221","62, 131, 225","33, 78, 194"]}};
+  </script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&amp;family=Source+Code+Pro&amp;display=swap" media="none" onload="this.media='all'"><script src="//at.alicdn.com/t/font_1140697_rtqh36oinzl.js" async></script><div class="js-Pjax"></div><link rel="alternate" href="/atom.xml" title="云狐之境" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-okaidia.css" type="text/css"></head><body><script defer src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script defer src="https://cdn.jsdelivr.net/gh/cloudfox2/cloudfox2.github.io/js/ui/fireworks.js"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle sidebar-toggle-fixed hty-icon-button"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><aside class="sidebar"><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="文章目录"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-list-ordered"></use></svg></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="站点概览"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-passport-line"></use></svg></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about" title="云狐"><img width="96" loading="lazy" src="https://cf0.oss-cn-shanghai.aliyuncs.com/blog/avatar.webp" alt="云狐"></a><div class="site-author-name"><a href="/about/">云狐</a></div><a class="site-name" href="/about/site">云狐之境</a><sub class="site-subtitle"></sub><div class="site-desciption"></div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="首页"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-home-4-line"></use></svg></span></a><div class="site-state-item site-state-posts"><a href="/archives" title="归档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-archive-line"></use></svg></span><span class="site-state-item-count">6</span></a></div><div class="site-state-item site-state-categories"><a href="/categories" title="分类"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-2-line"></use></svg></span><span class="site-state-item-count">2</span></a></div><div class="site-state-item site-state-tags"><a href="/tags" title="标签"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="site-state-item-count">4</span></a></div><a class="site-state-item hty-icon-button" href="/about/#comment" title="留言"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-clipboard-line"></use></svg></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/cloudfox2" title="GitHub" target="_blank" style="color:#181717"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-github-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://wpa.qq.com/msgrd?v=3&amp;uin=348868282&amp;site=qq&amp;menu=yes" title="QQ" target="_blank" style="color:#12B7F5"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://t.me/cloudfox2" title="Telegram" target="_blank" style="color:#0088CC"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-telegram-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://space.bilibili.com/353913" title="bilibili" target="_blank" style="color:#FF8EB3"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-bilibili-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="/atom.xml" title="RSS" target="_blank" style="color:orange"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-rss-line"></use></svg></a></div><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/links/" title="如水" style="color:dodgerblue"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-genderless-line"></use></svg></a><a class="links-item hty-icon-button" href="/girls/" title="朱颜" style="color:hotpink"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-women-line"></use></svg></a></div></div><script defer src="https://cdn.jsdelivr.net/gh/cloudfox2/cloudfox2.github.io/js/sidebar.js"></script><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#el-bot"><span class="toc-number">1.</span> <span class="toc-text">el-bot</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Project-Oekakisoli"><span class="toc-number">2.</span> <span class="toc-text">Project Oekakisoli</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#功能"><span class="toc-number">3.</span> <span class="toc-text">功能</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#API"><span class="toc-number">3.1.</span> <span class="toc-text">API</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#今日人品"><span class="toc-number">3.2.</span> <span class="toc-text">今日人品</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#今日-24-点"><span class="toc-number">3.3.</span> <span class="toc-text">今日 24 点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#RSS"><span class="toc-number">3.4.</span> <span class="toc-text">RSS</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记"><span class="toc-number">4.</span> <span class="toc-text">后记</span></a></li></ol></div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="post-block" itemscope itemtype="https://schema.org/Article"><link itemprop="mainEntityOfPage" href="https://cf1.me/qq-bot/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="云狐"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="云狐之境"></span><header class="post-header"><h1 class="post-title" itemprop="name headline" style="color: undefined">QQ 机器人</h1><div class="post-meta"><div class="post-time" style="display:block"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-line"></use></svg></span> <time title="创建时间：2020-09-24 23:39:00" itemprop="dateCreated datePublished" datetime="2020-09-24T23:39:00+08:00">2020-09-24</time><span class="post-meta-divider">-</span><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-2-line"></use></svg></span> <time title="修改时间：2020-11-18 11:29:35" itemprop="dateModified" datetime="2020-11-18T11:29:35+08:00">2020-11-18</time></div><span class="post-count"><span class="post-symbolcount"><span class="post-meta-item-icon" title="本文字数"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-file-word-line"></use></svg></span> <span title="本文字数">16k</span><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="阅读时长"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-timer-line"></use></svg></span> <span title="阅读时长">30 分钟</span></span></span><span class="leancloud_visitors" id="/qq-bot/" data-flag-title="QQ 机器人"><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="阅读次数"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-eye-line"></use></svg> <span class="leancloud-visitors-count"></span></span></span><div class="post-classify"><span class="post-category"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-line"></use></svg></span> <span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a class="category" href="/categories/%E6%9E%81%E5%AE%A2/" itemprop="url" rel="index"><span itemprop="text">极客</span></a></span></span><span class="post-tag"><span class="post-meta-divider">-</span><a class="tag" href="/tags/QQ-%E6%9C%BA%E5%99%A8%E4%BA%BA/"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="tag-name">QQ 机器人</span></a></span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content post-markdown"><h2 id="el-bot"><a href="#el-bot" class="headerlink" title="el-bot"></a><a href="https://www.yunyoujun.cn/note/make-el-bot/" target="_blank" rel="noopener">el-bot</a></h2><p>云游君整了个 QQ 机器人，挺有兴趣的就也整了一个，部署的时候折腾了好一会儿，甚至远程求助，总算是接上了，最后还是部署在 Mac 上了，Win 上问题挺多的，现在大概好一点，我用的还是 0.1 的版本，现在已经到 0.5 了，懒得更新了，反正也不需要啥新功能。</p>
+<a id="more"></a>
+
+<p>记录下启动命令，一个 mirai，一个 el-bot 的，分两个窗口运行，新版本好像是合并了。</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> run start:mirai
+<span class="token function">npm</span> run start</code></pre>
+<ul>
+<li><a href="https://docs.bot.elpsy.cn/" target="_blank" rel="noopener">文档</a></li>
+<li><a href="https://github.com/ElpsyCN/el-bot-plugins" target="_blank" rel="noopener">插件</a></li>
+<li><a href="https://github.com/project-mirai/mirai-api-http" target="_blank" rel="noopener">Mirai-API-http</a></li>
+</ul>
+<p>慕斯：好复杂的样子。<br>云狐：那来个简单的，一行代码实现人工智能：</p>
+<pre class=" language-py"><code class="language-py">while True:print(input().strip("吗?？") + "!")</code></pre>
+<p>效果：<br><img src="https://i.loli.net/2020/10/06/5n9HrXb4IZUDWiV.png" alt="效果" loading="lazy"></p>
+<h2 id="Project-Oekakisoli"><a href="#Project-Oekakisoli" class="headerlink" title="Project Oekakisoli"></a>Project Oekakisoli</h2><blockquote>
+<p>等一切结束，我们就狂欢。</p>
+</blockquote>
+<p>QQ 机器人，不禁让我想起曾经的萌娘回路、<a href="https://zh.moegirl.org/%E7%8C%AB%E8%B0%9C%E7%BB%98%E9%9F%B3" target="_blank" rel="noopener">猫谜绘音</a> 和猫谜绘板，已经不记得当初是从哪看到的了，只记得入坑的时候一堆的名词术语差点给我整懵了。<br>简单说，整个企划叫做「Project Oekakisoli」，主要致力于同人美术创作，由此衍生出的一系列产品：</p>
+<ul>
+<li>猫谜绘板：主要是个在线你画我猜游戏，但也可以单纯用来画画，在社区里可以像 Pixiv 一样浏览作品，而且还带绘画过程，甚至还有评论弹幕</li>
+<li>萌娘回路：智能聊天 AI（似乎是深受「夏娃的时间」影响），其中猫谜绘音（之前叫ネコナゾ娘）是最主要的看板娘 AI，在绘板中也可以邀请其进行游戏，画的时候会复制绘画题目的前人的绘画过程</li>
+<li>猫茶绘：后期升级版的猫谜绘板，最重要的功能大概是多图层了</li>
+<li><a href="https://github.com/qyx525127/NekoIM" target="_blank" rel="noopener">猫聊</a>：IM</li>
+</ul>
+<p>整个用爱发电的独立制作的同人企划始于 2010 年，于 2017 年停止运营，只过了三年，我却感觉隔了一个世纪。<br>即使到今天（感觉不知道从何时起，国内互联网开始全面走下坡路），猫谜绘板依然是国内做的最好的你画我猜（极大的各类型题库、画板功能丰富、支持数位板、模糊匹配答案等等（就是二次元味有点浓）），萌娘回路也依然是国内民间做的最好的聊天 AI（不是傻乎乎的关键词响应，而是可以理解上下文，有性格，有好感度系统，可以调教却绝对不会像其他 AI 一样学坏，努力接近图灵测试的 AI，虽然其智能是靠人力硬堆而非 NLP、机器学习之类的），即使知名度极低（活着的时候也没几个人，也就散人宣传之后稍微火了一会）。<br>至于开发者，感觉有刻意隐藏自己的存在，我也就不多谈了，反正了解也很少。<br>企划的关闭不禁让人怀疑「用爱发电」是否只是乌托邦。（<del>所以爱会消失对不对</del>）<br>顺便「Oekakisoli」的意思大概是绘图机（不懂日语）。</p>
+<p>相关信息：</p>
+<ul>
+<li><a href="http://www.nekonazo.com/partyex/" target="_blank" rel="noopener">猫谜绘板（当然已经挂了）</a></li>
+<li><a href="https://b23.tv/av874564" target="_blank" rel="noopener">散人绘板实况</a></li>
+<li><a href="https://web.archive.org/web/20160414152842/http://bbs.nekonazo.com/forum.php" target="_blank" rel="noopener">曾经的论坛</a></li>
+<li><a href="https://zh.moegirl.org/%E7%8C%AB%E8%B0%9C%E7%BB%98%E9%9F%B3" target="_blank" rel="noopener">猫谜绘音</a></li>
+<li><a href="https://www.zhihu.com/question/47063057" target="_blank" rel="noopener">如何评价「猫谜绘音」被作者从萌娘回路中删除？</a></li>
+<li><a href="https://sstm.moe/topic/128957-%E8%90%8C%E5%A8%98%E5%9B%9E%E8%B7%AF-%EF%BD%9E-moec-core%EF%BC%88%E5%BC%80%E6%BA%90%E8%BD%AC%E8%BD%BD%EF%BC%89/" target="_blank" rel="noopener">萌娘回路</a></li>
+<li><a href="https://tieba.baidu.com/p/4136856025" target="_blank" rel="noopener">萌娘回路聊天指令</a></li>
+</ul>
+<p>说起来我也在绘板画过几幅作品，主要是临摹吧，之前也从来没画过画。</p>
+<p><img src="https://i.loli.net/2020/09/23/HJSGj3FaUORhKd8.png" alt="RWBY" loading="lazy"></p>
+<p>纯粹 <a href="https://i.loli.net/2020/09/23/I2PEhMHXdVf7q69.jpg" target="_blank" rel="noopener">临摹</a>（简直就是照着描）的图，月亮还是用按键精灵画的，因为画笔放不到那么大，很难画那么圆。</p>
+<p>慕斯：你直接用按键精灵一像素一像素复制下来就完了。</p>
+<p><img src="https://i.loli.net/2020/09/23/igulN72SbqtpFDj.png" alt="赫卡特" loading="lazy"></p>
+<p>赫卡特，想试着自己画一下背景结果画成了这鸟样，想画的是站在悬崖上看日出的样子，结果看着像是把人物跟小学生画作拼在一起似的。</p>
+<p><img src="https://i.loli.net/2020/09/23/TAYLG8w3EiXnNlO.jpg" alt="马上有灵梦" loading="lazy"></p>
+<p>14 年马年春节前画的，主要也是临的（PID：18920920），这个是用 SAI 画的了，总算有多图层了，整整用鼠标勾了一个星期，累死了，结果还凑合吧，勉强能看。</p>
+<p>之后也再没画过画了，真要画也得弄个板子，鼠标和钢笔拉出来的线条根本没有灵魂。</p>
+<h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><p>随便整了点功能，主要还是框架本身有的功能，别的功能都是在写在自定义插件里。</p>
+<ul>
+<li>天气：xxx天气</li>
+<li>翻译：翻译xxx（其他语言→中）</li>
+<li>壁纸：来点壁纸</li>
+<li>涩图：来点涩图</li>
+<li>笑话：来点xxx笑话</li>
+<li>一言：say</li>
+<li>今日人品：jrrp</li>
+<li>今日塔罗牌：tlp（只弄了大阿卡那牌）</li>
+<li>今日 24 点：24d</li>
+<li>影之诗卡牌查询：svp xxx（还强行弄了个短链）</li>
+<li>关键词应答</li>
+<li>撤回/禁言/加群 响应</li>
+<li>RSS 订阅</li>
+</ul>
+<h3 id="API"><a href="#API" class="headerlink" title="API"></a>API</h3><p>接 API 的功能代码差不多都是这种结构：</p>
+<pre class=" language-js"><code class="language-js">  mirai<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">"message"</span><span class="token punctuation">,</span> <span class="token keyword">async</span> <span class="token punctuation">(</span>msg<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token function">re</span><span class="token punctuation">(</span>msg<span class="token punctuation">.</span>plain<span class="token punctuation">,</span> <span class="token string">"^foo"</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">let</span> content <span class="token operator">=</span> msg<span class="token punctuation">.</span>plain<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">"foo"</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">trim</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">var</span> url <span class="token operator">=</span> <span class="token string">"https://foo.bar?foo="</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>content<span class="token punctuation">.</span>length <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      url <span class="token operator">+</span><span class="token operator">=</span> <span class="token function">encodeURI</span><span class="token punctuation">(</span>content<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> data <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">await</span> axios<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token keyword">catch</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">.</span>response<span class="token punctuation">.</span>data<span class="token punctuation">)</span>
+        msg<span class="token punctuation">.</span><span class="token function">reply</span><span class="token punctuation">(</span>error<span class="token punctuation">.</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>msg<span class="token punctuation">)</span>
+        <span class="token keyword">return</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    msg<span class="token punctuation">.</span><span class="token function">reply</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>data<span class="token punctuation">.</span>foo<span class="token punctuation">.</span>bar<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+<p>天气、翻译、短链：</p>
+<ul>
+<li><a href="https://www.alapi.net/" target="_blank" rel="noopener">ALAPI</a></li>
+</ul>
+<p>壁纸：</p>
+<p>只是发个网络图片的话用应答就可以了。</p>
+<pre class=" language-yml"><code class="language-yml">  - re: 来点壁纸
+    reply:
+      - type: Plain
+        text: 让我找找~
+      - type: Image
+        url: https://api.addesp.com/image/wallpaper/acg</code></pre>
+<ul>
+<li><a href="https://www.addesp.com/archives/329" target="_blank" rel="noopener">ADD-SP</a>：<a href="https://api.addesp.com/image/wallpaper/acg" target="_blank" rel="noopener">https://api.addesp.com/image/wallpaper/acg</a></li>
+</ul>
+<p>涩图：</p>
+<ul>
+<li><a href="https://github.com/ElpsyCN/el-bot-plugins/tree/master/packages/setu" target="_blank" rel="noopener">云游君</a>：<a href="https://el-bot-api.vercel.app/api/setu" target="_blank" rel="noopener">https://el-bot-api.vercel.app/api/setu</a></li>
+<li><a href="https://api.lolicon.app/#/setu" target="_blank" rel="noopener">Lolicon（神代綺凜）</a>：<a href="https://api.lolicon.app/setu/?r18=0" target="_blank" rel="noopener">https://api.lolicon.app/setu/?r18=0</a></li>
+<li><a href="https://www.yukari.one/2020/08/10/setuAPI/" target="_blank" rel="noopener">Yukari（脆饼干）</a>：<a href="https://api.yukari.one/setu/?r18=0" target="_blank" rel="noopener">https://api.yukari.one/setu/?r18=0</a>（<del>不够色</del>）</li>
+</ul>
+<p>甚至有个 <a href="https://github.com/CBGan/hso" target="_blank" rel="noopener">App</a>。</p>
+<p>慕斯：这就是程序员吗（=_=）</p>
+<h3 id="今日人品"><a href="#今日人品" class="headerlink" title="今日人品"></a>今日人品</h3><p>之前看到过这种功能所以想着也整一个玩玩，最开始的想法当然是直接用随机数，但是立刻意识到这样岂不是每次都会变，应该每个人每天的值是不变的，把值保存下来当然可以解决，但是显然不够优雅，然后就想到了根据种子生成随机数，谷歌了一下好像 js 原生没有这种函数，找到个算法模拟的伪随机种子函数（<a href="https://github.com/bryc/code/blob/master/jshash/PRNGs.md" target="_blank" rel="noopener">参考</a>）：</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">xmur3</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> h <span class="token operator">=</span> <span class="token number">1779033703</span> <span class="token operator">^</span> str<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i <span class="token operator">&lt;</span> str<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+        h <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">imul</span><span class="token punctuation">(</span>h <span class="token operator">^</span> str<span class="token punctuation">.</span><span class="token function">charCodeAt</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">3432918353</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        h <span class="token operator">=</span> h <span class="token operator">&lt;</span><span class="token operator">&lt;</span> <span class="token number">13</span> <span class="token operator">|</span> h <span class="token operator">></span><span class="token operator">></span><span class="token operator">></span> <span class="token number">19</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        h <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">imul</span><span class="token punctuation">(</span>h <span class="token operator">^</span> h <span class="token operator">></span><span class="token operator">></span><span class="token operator">></span> <span class="token number">16</span><span class="token punctuation">,</span> <span class="token number">2246822507</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        h <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">imul</span><span class="token punctuation">(</span>h <span class="token operator">^</span> h <span class="token operator">></span><span class="token operator">></span><span class="token operator">></span> <span class="token number">13</span><span class="token punctuation">,</span> <span class="token number">3266489909</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token punctuation">(</span>h <span class="token operator">^</span><span class="token operator">=</span> h <span class="token operator">></span><span class="token operator">></span><span class="token operator">></span> <span class="token number">16</span><span class="token punctuation">)</span> <span class="token operator">></span><span class="token operator">></span><span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>一堆 magic number，懒得研究了，能用就行，然后种子用 QQ 号 + 日期，最后取 101 的模就完成了。</p>
+<h3 id="今日-24-点"><a href="#今日-24-点" class="headerlink" title="今日 24 点"></a>今日 24 点</h3><p>示例：</p>
+<blockquote>
+<p>今天的 24 点题目是「5 5 7 11」~</p>
+</blockquote>
+<p>参考 <a href="https://www.4shu.net/game/difficulties/" target="_blank" rel="noopener">4 数网</a>，选了最难的 171 题（解决率在 70% 以下），当然大部分依然很简单。<br>随机方法跟今日人品同理。</p>
+<h3 id="RSS"><a href="#RSS" class="headerlink" title="RSS"></a>RSS</h3><p>RSS 是个好东西，远离国内局域网的好工具，虽然我以前也不用，用机器人订阅倒是挺不错的。<br>说到 RSS 当然不得不提 <a href="https://diygod.me/" target="_blank" rel="noopener">DIYgod</a> 的 <a href="https://rsshub.app/" target="_blank" rel="noopener">RSShub</a> 了（万物皆可 RSS），如今已被墙了，我试图 <a href="https://www.yfmingo.cn/2018/06/29/mac-terminal-shadowsocks/" target="_blank" rel="noopener">配置 Mac 终端的代理</a>：</p>
+<p>npm 代理：</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> config <span class="token keyword">set</span> proxy<span class="token operator">=</span>http://127.0.0.1:1087
+<span class="token function">npm</span> config <span class="token keyword">set</span> https-proxy<span class="token operator">=</span>http://127.0.0.1:1087</code></pre>
+<p>删除代理：</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> config delete proxy
+<span class="token function">npm</span> config delete https-proxy</code></pre>
+<p>结果好像都没用，最后用了别人搭的 <code>rsshub.ioiox.com</code>，也不知道啥时候就没了，用一天是一天吧。</p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><blockquote>
+<p>全剧·终<br>很喜欢你，但是到此为止，谢谢你的出现。</p>
+</blockquote>
+<p><a href="https://card.weibo.com/article/m/show/id/2309404533401464996007" target="_blank" rel="noopener">第三方 QQ 机器人的风与雨</a></p>
+<p>腾讯开始封杀 QQ 机器人了，一众开发者纷纷跑路（mirai 他又回来了，当然 mirai 跑路了也不暂时影响使用），虽然 QQ 机器人法律上确实是不占理，但是腾讯的垄断也是真的恶心。</p>
+<blockquote>
+<p>当无产阶级不再思考资产阶级本身的合理性，而将反对的目标局限于某几个资本家的时候，说明资本主义已经成功了。</p>
+</blockquote>
+</div><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者：</strong>云狐</li><li class="post-copyright-link"><strong>本文链接：</strong><a href="https://cf1.me/qq-bot/" title="QQ 机器人">https://cf1.me/qq-bot/</a></li><li class="post-copyright-license"><strong>版权声明：</strong><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><svg class="icon"><use xlink:href="#icon-creative-commons-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-by-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-nc-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-sa-line"></use></svg></a></li></ul></section></article><div class="post-nav"><div class="post-nav-item"></div><div class="post-nav-item"><a class="post-nav-next" href="/chitchat-1/" rel="next" title="闲言碎语"><span class="post-nav-text">闲言碎语</span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-right-s-line"></use></svg></a></div></div></div><div id="comment"><div class="comment-tooltip text-center"></div><div class="comment-container" id="valine-container"></div></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2020 </span><span class="with-love" id="animate"><i class="fas fa-yin-yang fa-spin"></i></span><span class="author"> 云狐</span></div><div class="powered"><span><a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> v4.2.0</span><span class="footer-separator">|</span><span><a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v0.7.0</span></div><script defer src="https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script><script>function initValine() {
+  new Valine({
+    el: "#valine-container",
+    appId: 'xniScjvwPxO3ivBW25ReiHWe-MdYXbMMI',
+    appKey: 'MEIJgTbrcF7NTqWDr48je6OP',
+    placeholder: '加入讨论...',
+    path: window.location.pathname,
+    avatar: 'mp',
+    meta: ["nick","mail","link"],
+    pageSize: 10,
+    lang: 'zh-cn',
+    visitor: true,
+    highlight: true,
+    recordIP: true,
+    serverURLs: '',
+    emojiCDN: '',
+    emojiMaps: null,
+    enableQQ: true,
+    requiredFields: [],
+  });
+}
+document.addEventListener("DOMContentLoaded", initValine);
+document.addEventListener("pjax:success", initValine);</script></footer><a class="hty-icon-button" id="goUp" aria-label="back-to-top" href="#"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-up-s-line"></use></svg><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#2F54EB" stroke-width="2" stroke-linecap="round"></circle></svg></a><a class="popup-trigger hty-icon-button icon-search" id="search" href="javascript:;" title="搜索"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-search-line"></use></svg></span></a><script defer src="https://cdn.jsdelivr.net/gh/cloudfox2/cloudfox2.github.io/js/search/index.js"></script><script src="https://cdn.jsdelivr.net/gh/cloudfox2/cloudfox2.github.io/js/search/local-search.js" defer></script><div class="popup search-popup"><div class="search-header"><span class="popup-btn-close close-icon hty-icon-button"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-close-line"></use></svg></span></div><div class="search-input-container"><input class="search-input" id="local-search-input" type="text" placeholder="搜索..." value=""></div><div id="local-search-result"></div></div></div><script defer src="https://cdn.jsdelivr.net/gh/cloudfox2/cloudfox2.github.io/js/hexo-theme-yun.js"></script></body></html>

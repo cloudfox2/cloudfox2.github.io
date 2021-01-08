@@ -1,7 +1,8 @@
 ---
 title: QQ 机器人
+link: qq-bot
 date: 2020-09-24 23:39:00
-categories: 极客
+categories: 技术
 tags: QQ 机器人
 ---
 

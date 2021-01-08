@@ -13,7 +13,7 @@ timezone: Asia/Shanghai
 # URL
 url: https://cf1.me
 root: /
-permalink: :title/
+permalink: :link/
 permalink_defaults:
 pretty_urls:
   trailing_index: false # Set to false to remove trailing 'index.html' from permalinks

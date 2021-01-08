@@ -1,5 +1,6 @@
 ---
 title: IB 回忆录
+link: ib-memoirs
 date: 2020-09-08 10:57:49
 categories: 随笔
 tags: 流年碎影

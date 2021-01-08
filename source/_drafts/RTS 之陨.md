@@ -1,8 +1,9 @@
 ---
 title: RTS 之陨
+link: fall-of-rts
 date: 2020-10-21 18:00:00
 categories: 游戏
-tags: 
+tags: 游戏设计
 ---
 
 ## 死亡宣告

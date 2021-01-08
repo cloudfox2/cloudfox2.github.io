@@ -1,5 +1,6 @@
 ---
 title: 浅谈《Downwell》游戏设计
+link: chitchat-downwell
 date: 2020-12-28 08:00:00
 categories: 游戏
 tags: 游戏设计
@@ -42,6 +43,8 @@ tags: 游戏设计
 ## 相关链接
 
 [官方主页](https://downwellgame.com/)
+[开发者博客](https://zackbellgames.com/)
+[当个深井兵（机核）](https://www.gcores.com/articles/16985)
 [Downwell 日本独立游戏佳作（最美应用）](http://zuimeia.com/app/3798/)
 [Downwell 一款让你呼吸急促、手心出汗、却又欢呼雀跃的游戏（NGA 安利兼攻略）](https://bbs.nga.cn/read.php?tid=14111719)
 

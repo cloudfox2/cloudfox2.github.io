@@ -58,10 +58,10 @@ highlight:
 index_generator:
   path: ''
   per_page: 7
-  order_by: -date
+  order_by: -posted
 
 # Category & Tag
-default_category: uncategorized
+default_category: 未分类
 category_map:
 tag_map:
 

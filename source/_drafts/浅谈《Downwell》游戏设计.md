@@ -1,7 +1,9 @@
 ---
 title: 浅谈《Downwell》游戏设计
 link: chitchat-downwell
-date: 2020-12-28 08:00:00
+date: 2020-12-28
+posted: 
+updated: 
 categories: 游戏
 tags: 游戏设计
 ---

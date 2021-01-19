@@ -14,10 +14,21 @@ date: 2020-05-04 17:17:46
 
 目前是 `cf1.me`，取 cloudfox 的简写，当然主要还是便宜，次域名 `fox1.me`，白嫖的反正，还有个`cloudfox.me`。
 
-## 时间线
+## 历史
 
-2020 年 04 月 28 日：建站，域名 `cf1.me`，Hexo 驱动，主题 [Yun](https://github.com/cloudfox2/hexo-theme-yun)，部署于 GitHub Pages：`cloudfox2.github.io`
+### 2020-04-28
 
-2021 年 01 月 12 日：配置 [Valine Admin](https://github.com/DesertsP/Valine-Admin)，包括评论邮件提醒、评论管理、垃圾评论检测
+建站，域名：`cf1.me`
+域名服务：[dynadot](https://www.dynadot.com/)
+框架：[Hexo](https://hexo.io/zh-cn/)
+主题：[Yun](https://github.com/cloudfox2/hexo-theme-yun)
+部署：GitHub Pages：`cloudfox2.github.io`
+图床：阿里云 OSS & [SM.MS](https://sm.ms)
 
-2021 年 01 月 18 日：部署于 Vercel：`cloudfox.vercel.app`（居然抢到了 cloudfox）
+### 2021-01-12
+
+配置 [Valine Admin](https://github.com/DesertsP/Valine-Admin)，包括评论邮件提醒、评论管理、垃圾评论检测
+
+### 2021-01-18
+
+部署于 [Vercel](https://vercel.com)：`cloudfox.vercel.app`

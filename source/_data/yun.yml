@@ -75,7 +75,7 @@ social:
   #   icon: icon-qq-line
   #   color: "#12B7F5"
   - name: Telegram
-    link: https://t.me/cloudfox2
+    link: https://t.me/cloudfox
     icon: icon-telegram-line
     color: "#0088CC"
   - name: bilibili

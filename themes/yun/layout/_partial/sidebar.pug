@@ -23,7 +23,7 @@ aside.sidebar
         a.site-name(href=url_for('about/site.html'))
           | #{config.title}
         sub.site-subtitle!=config.subtitle
-        .site-desciption!=config.description
+        //- .site-desciption!=config.description
 
     nav.site-state
       a.site-state-item.hty-icon-button.icon-home(href=url_for(theme.menu.home.path), title=__('menu.home'))

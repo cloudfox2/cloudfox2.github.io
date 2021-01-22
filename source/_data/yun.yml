@@ -143,6 +143,6 @@ valine:
     - link
   pageSize: 10
   visitor: true
-  visitor_index: false
+  visitor_index: true
   recordIP: true
   enableQQ: true

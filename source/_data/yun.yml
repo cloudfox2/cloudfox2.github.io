@@ -2,8 +2,8 @@ head:
   css:
     fortawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
 
-cdn:
-  pre: https://cdn.jsdelivr.net/gh/cloudfox2/cloudfox2.github.io
+# cdn:
+#   pre: https://cdn.jsdelivr.net/gh/cloudfox2/cloudfox2.github.io
 
 colors:
   primary: "#2F54EB"

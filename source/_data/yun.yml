@@ -7,7 +7,7 @@ cdn:
 
 colors:
   primary: "#2F54EB"
-  bg: "#bae7ff"
+  bg: "#BAE7FF"
   selection_bg: "#85A5FF"
   # 标签云中标签的起始色和结束色
   tag_start_color: "#85A5FF"

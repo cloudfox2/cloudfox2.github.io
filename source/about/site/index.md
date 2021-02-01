@@ -32,3 +32,7 @@ date: 2020-05-04 17:17:46
 ### 2021-01-18
 
 部署于 [Vercel](https://vercel.com)：`cloudfox.vercel.app`
+
+### 2021-02-01
+
+接入 [Google Analytics](https://analytics.google.com/)

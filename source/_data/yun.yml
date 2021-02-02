@@ -143,7 +143,7 @@ valine:
     - link
   pageSize: 10
   visitor: true
-  visitor_index: false
+  visitor_index: false #全局统计，与单篇统计冲突
   recordIP: true
   enableQQ: true
 

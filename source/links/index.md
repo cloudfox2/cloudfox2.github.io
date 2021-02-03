@@ -31,7 +31,7 @@ placeholder: 这家伙很懒~ # 默认对友链的描述
 tip: 加载中
 ---
 
->君子之交淡如水。
+> [中文独立博客列表](https://github.com/timqian/chinese-independent-blogs)
 
 ### 不才
 
@@ -42,5 +42,3 @@ name: 云狐
 blog: 云狐之境
 color: "#2F54EB"
 ```
-
-> [中文独立博客列表](https://github.com/timqian/chinese-independent-blogs)

@@ -52,12 +52,7 @@ tags: [游戏设计, 魔兽地图]
 WOW 副本中，会有小怪，有 Boss，保持一定的节奏。
 即使是 Boss Rush 的 IB，也会有固定的中场休息时间。
 
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="cloudfox2" data-slug-hash="ZEBOodM" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="游戏节奏对比">
-  <span>See the Pen <a href="https://codepen.io/cloudfox2/pen/ZEBOodM">
-  游戏节奏对比</a> by cloudfox (<a href="https://codepen.io/cloudfox2">@cloudfox2</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+{% codepen ZEBOodM %}
 
 甚至跟其他 RTS 比，在《魔兽争霸 3》中，职业选手基本摸到了游戏的天花板，运营流程已经精确到秒，由于单位较少，也基本上可以达到对每个战斗单位的精准操作。而在星际中，给玩家的操作空间已经超过了人的极限，即使是职业选手也摸不到顶，单独说这也没什么不好的。但在策略上，玩家的选择依然是有限的，并且操作的有限又进一步使玩家倾向于更简单的战术和兵种组合，这就导致了星际经常被批评的点：太注重操作。
 

@@ -125,3 +125,10 @@ search:
   path: search.xml
   field: post
   content: true
+
+codepen:
+  userId: "cloudfox2"
+  theme: "light"
+  default_tabs: "result"
+  height: 265
+  width: "100%"

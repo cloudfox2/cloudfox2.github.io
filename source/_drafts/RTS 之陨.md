@@ -27,7 +27,7 @@ tags: [游戏设计, 魔兽地图]
 
 ### 微操
 
-作为「即时战略」，微操肯定是无法避免的，即使是开局的一个农民探路，就可以有一万波博弈，可以 A 农民，可以干扰采矿、封气矿、干扰二矿、封二矿等等操作。没有微操的那叫回合制。
+作为「即时战略」，微操肯定是无法避免的，即使是开局的一个探路农民，就可以有一万波博弈，可以 A 农民，可以干扰采矿、封气矿、干扰二矿、封二矿等等操作。没有微操的那叫回合制。
 
 ### 多线
 
@@ -43,6 +43,24 @@ tags: [游戏设计, 魔兽地图]
 - 鼓励随时侦查、反侦察
 - 大大提高观赏性
 
+### 总结
+
+暴雪系 RTS 的每一个元素单看都是易上手、难精通，没有什么问题。但是结合起来全部交给一个玩家就太过复杂，
+
+从游戏节奏上说，RTS 除了前期较为轻松以外，从中期开始就需要一直保持尽可能高的节奏，RTS 从机制上鼓励你节奏越快越好，你一慢，对手就会超过你，基本等于内卷。
+在 AOS 中，一波兵最多就那么几个，野怪刷新时间也是固定的，战斗频率也较为合理。
+WOW 副本中，会有小怪，有 Boss，保持一定的节奏。
+即使是 Boss Rush 的 IB，也会有固定的中场休息时间。
+
+<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="cloudfox2" data-slug-hash="ZEBOodM" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="游戏节奏对比">
+  <span>See the Pen <a href="https://codepen.io/cloudfox2/pen/ZEBOodM">
+  游戏节奏对比</a> by cloudfox (<a href="https://codepen.io/cloudfox2">@cloudfox2</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+甚至跟其他 RTS 比，在《魔兽争霸 3》中，职业选手基本摸到了游戏的天花板，运营流程已经精确到秒，由于单位较少，也基本上可以达到对每个战斗单位的精准操作。而在星际中，给玩家的操作空间已经超过了人的极限，即使是职业选手也摸不到顶，单独说这也没什么不好的。但在策略上，玩家的选择依然是有限的，并且操作的有限又进一步使玩家倾向于更简单的战术和兵种组合，这就导致了星际经常被批评的点：太注重操作。
+
 ### 简化方向
 
 #### 分工：执政官、N 打 1 造
@@ -55,7 +73,9 @@ tags: [游戏设计, 魔兽地图]
 
 
 
-#### 侧重运营/布阵：城堡战争、沙漠风暴
+#### 侧重运营/布阵：城堡战争、沙漠风暴、自走棋？等
+
+彻底去掉了所有微操部分，所有部队只能自行作战，
 
 #### PVE：合作模式
 

@@ -36,7 +36,7 @@ tags: 游戏设计
 
 ### 节奏
 
-{% codepen vYyKjwL %}
+![游戏节奏](https://i.loli.net/2021/02/12/NEi5Zfose96URla.png)
 
 在游戏节奏上，《Downwell》基本吻合理想的游戏节奏，保持着比较好的曲线：
 

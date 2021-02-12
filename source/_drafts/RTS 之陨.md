@@ -52,7 +52,7 @@ tags: [游戏设计, 魔兽地图]
 WOW 副本中，会有小怪，有 Boss，保持一定的节奏。
 即使是 Boss Rush 的 IB，也会有固定的中场休息时间。
 
-{% codepen ZEBOodM %}
+![游戏节奏对比(https://i.loli.net/2021/02/12/vqULepCybIanc5d.png)
 
 ### 简化方向
 

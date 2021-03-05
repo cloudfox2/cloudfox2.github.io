@@ -153,3 +153,4 @@ WOW 背景下的 RTS，你可以指挥一方势力，改变那些 WOW 的正史�
 ## 相关链接
 
 - [RTS 从未衰亡：浅谈 RTS 游戏的内核与未来](https://www.gcores.com/articles/130379)
+- [时代眼泪还是发展瓶颈？RTS 的过去，现在和未来](https://bbs.nga.cn/read.php?tid=25577628)

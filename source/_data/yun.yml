@@ -66,10 +66,6 @@ social:
     link: https://github.com/cloudfox2
     icon: icon-github-line
     color: "#181717"
-  - name: E-Mail
-    link: mailto:cloudfox22@gmail.com
-    icon: icon-mail-line
-    color: "#8E71C1"
   # - name: QQ
   #   link: https://wpa.qq.com/msgrd?v=3&uin=348868282&site=qq&menu=yes
   #   icon: icon-qq-line
@@ -78,10 +74,18 @@ social:
     link: https://t.me/cloudfox
     icon: icon-telegram-line
     color: "#0088CC"
+  - name: Twitter
+    link: https://twitter.com/cloudfox22
+    icon: icon-twitter-line
+    color: "#1DA1F2"
   - name: bilibili
     link: https://space.bilibili.com/353913
     icon: icon-bilibili-line
     color: "#FF8EB3"
+  - name: E-Mail
+    link: mailto:cloudfox22@gmail.com
+    icon: icon-mail-line
+    color: "#8E71C1"
   - name: RSS
     link: /atom.xml # config.feed.path
     icon: icon-rss-line

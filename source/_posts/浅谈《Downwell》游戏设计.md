@@ -84,6 +84,7 @@ tags: 游戏设计
 
 - [官方主页](https://downwellgame.com/)
 - [开发者博客](https://zackbellgames.com/)
+- [《坠落深井》的双用途设计 - 游戏制作工具箱](https://b23.tv/av11368232)
 - [当个深井兵 - 机核](https://www.gcores.com/articles/16985)
 - [Downwell 日本独立游戏佳作 - 最美应用](http://zuimeia.com/app/3798/)
 - [Downwell 一款让你呼吸急促、手心出汗、却又欢呼雀跃的游戏 - NGA](https://bbs.nga.cn/read.php?tid=14111719)

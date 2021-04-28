@@ -15,7 +15,7 @@ hide: index
 
 <!-- more -->
 
-（IB 为魔兽地图[《不可能的 Boss(Impossible Bosses)》](https://baike.baidu.com/item/%E4%B8%8D%E5%8F%AF%E8%83%BD%E7%9A%84BOSS)的缩写）
+（IB 为魔兽地图[《不可能的 Boss》(Impossible Bosses)](https://baike.baidu.com/item/%E4%B8%8D%E5%8F%AF%E8%83%BD%E7%9A%84BOSS)的缩写）
 
 ## 缘起
 

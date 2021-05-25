@@ -24,6 +24,7 @@ date: 2020-05-04 17:17:46
 
 - ZUN
 - Psyris
+- Jonathan Blow
 - Monty Oum (R.I.P.)
 - 宫崎骏
 

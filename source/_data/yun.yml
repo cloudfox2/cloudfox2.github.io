@@ -2,6 +2,9 @@ head:
   css:
     fortawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
 
+custom:
+  style: source/_data/style/*
+
 # cdn:
 #   pre: https://cdn.jsdelivr.net/gh/cloudfox2/cloudfox2.github.io
 
@@ -22,7 +25,7 @@ font:
     family: "'Noto Serif SC', serif"
     weight: 700
   sans_serif:
-    family: "monospace, 'PingFang SC', 'Microsoft YaHei', sans-serif"
+    family: "Consolas, 'SF Mono', 'PingFang SC', 'Microsoft YaHei', sans-serif"
     weight: 400
   monospace:
     family: "Consolas, Menlo, 'Fira Code', 'Source Code Pro', monospace"

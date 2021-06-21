@@ -13,7 +13,7 @@ date: 2020-05-04 17:17:46
 职业：App 开发，独立负责 Android + iOS，也写过 C# WinForm 和维护过后端。
 业余：独立开发 [魔兽地图](https://cf1.me/my-works/)，主要作品[《皇家争霸》](https://dz.blizzard.cn/rpgmaps/detail/15469)；做地图汉化和搬运；做 [视频](https://space.bilibili.com/353913) 和直播。
 
-### 爱好
+### [爱好](https://cf1.me/recommended-works/)
 
 - 游戏：魔兽 3、星际 2、不可能的 Boss、Tetris、独立游戏（东方、空洞骑士、蔚蓝、传说之下、见证者、去月球、Downwell、尔茄的精灵石等等）
 - 小说：金庸、刘慈欣、卢飞龙、东野圭吾、科幻、推理等等

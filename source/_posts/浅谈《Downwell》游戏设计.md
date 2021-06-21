@@ -30,13 +30,13 @@ tags: 游戏设计
 
 ### 画面
 
-![画面](https://i.loli.net/2021/02/10/NW1qmtPryHID2vb.png)
+![画面](https://cf0.oss-cn-shanghai.aliyuncs.com/img/Downwell.png)
 
 简单的三色像素画面，成本低，辨识度极高，并且巧妙地用颜色区别了可以踩的怪物（浅色）和不能踩的怪物（深色）。而在《超级马里奥兄弟》系列中，几乎所有怪物都是用身上是否有刺来区分是否能踩的（Downwell 也部分用到了这种方式）。一方面，《Downwell》不想受限于仅用刺来区分是否能踩（Downwell 中踩怪这一机制可能比马里奥中还要重要），另一方面，在《Downwell》这样一个高速下落的游戏中，颜色比形状的辨识度更好一些。
 
 ### 节奏
 
-![游戏节奏](https://i.loli.net/2021/02/12/NEi5Zfose96URla.png)
+![游戏节奏](https://cf0.oss-cn-shanghai.aliyuncs.com/img/游戏节奏.png)
 
 在游戏节奏上，《Downwell》基本吻合理想的游戏节奏，保持着比较好的曲线：
 
@@ -70,7 +70,7 @@ tags: 游戏设计
   - 第三大关的呼吸值机制
   - 第四大关没有地面
 
-![关卡机制](https://i.loli.net/2021/02/10/Ua4Z7birTQVFEvg.png)_关卡机制_
+![关卡机制](https://cf0.oss-cn-shanghai.aliyuncs.com/img/Downwell关卡机制.jpg)_关卡机制_
 
 随着直播业的兴起，游戏设计界并非没有注意到游戏观赏性带来的直播效果及其广告效果。许多游戏甚至直接面向主播设计，诸如《和班尼特福迪一起攻克难关》，《Jump King》，《糖豆人：终极淘汰赛》<sup>?</sup>，也有很多游戏接入 Twitch 直播功能，让观众参与进入游戏流程。不过对于游戏观赏性方面的设计还有很大的发展空间，尤其是 PVE 游戏。
 

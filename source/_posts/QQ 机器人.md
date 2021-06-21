@@ -35,7 +35,7 @@ while True:print(input().strip("吗?？") + "!")
 ```
 
 效果：
-![效果](https://i.loli.net/2020/10/06/5n9HrXb4IZUDWiV.png)
+![效果](https://cf0.oss-cn-shanghai.aliyuncs.com/img/PythonAI.png)
 
 ## Project Oekakisoli
 
@@ -69,17 +69,17 @@ QQ 机器人，不禁让我想起曾经的萌娘回路、[猫谜绘音](https://
 
 说起来我也在绘板画过几幅作品，主要是临摹吧，之前也从来没画过画。
 
-![RWBY](https://i.loli.net/2020/09/23/HJSGj3FaUORhKd8.png)
+![RWBY](https://cf0.oss-cn-shanghai.aliyuncs.com/img/RWBY.png)
 
-纯粹 [临摹](https://i.loli.net/2020/09/23/I2PEhMHXdVf7q69.jpg)（简直就是照着描）的图，月亮还是用按键精灵画的，因为画笔放不到那么大，很难画那么圆。
+纯粹 [临摹](https://cf0.oss-cn-shanghai.aliyuncs.com/img/RWBY2.jpg)（简直就是照着描）的图，月亮还是用按键精灵画的，因为画笔放不到那么大，很难画那么圆。
 
 慕斯：你直接用按键精灵一像素一像素复制下来就完了。
 
-![赫卡特](https://i.loli.net/2020/09/23/igulN72SbqtpFDj.png)
+![赫卡特](https://cf0.oss-cn-shanghai.aliyuncs.com/img/赫卡特.jpg)
 
 赫卡特，想试着自己画一下背景结果画成了这鸟样，想画的是站在悬崖上看日出的样子，结果看着像是把人物跟小学生画作拼在一起似的。
 
-![马上有灵梦](https://i.loli.net/2020/09/23/TAYLG8w3EiXnNlO.jpg)
+![马上有灵梦](https://cf0.oss-cn-shanghai.aliyuncs.com/img/马上有灵梦.jpg)
 
 14 年马年春节前画的，主要也是临的（PID：[18920920](https://www.pixiv.net/artworks/18920920)），这个是用 SAI 画的了，总算有多图层了，整整用鼠标勾了一个星期，累死了，结果还凑合吧，勉强能看。
 

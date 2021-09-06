@@ -7,10 +7,10 @@ date: 2020-05-04 17:17:46
 
 > 是只狐狸，云做的狐狸。
 
-数学系，程序员，精简主义，热爱游戏。
+数学系，程序员，理性主义，热爱游戏。
 
 性格：[INTJ-A](https://www.16personalities.com/profiles/dcde81c65840a)
-职业：App 开发，独立负责 Android + iOS，也写过 C# WinForm 和维护过后端。
+职业：App 开发，独立负责 Android + iOS，也写过 C# WinForm、维护过后端。
 业余：独立开发 [魔兽地图](https://cf1.me/my-works/)，主要作品[《皇家争霸》](https://dz.blizzard.cn/rpgmaps/detail/15469)；做地图汉化和搬运；做 [视频](https://space.bilibili.com/353913) 和直播。
 
 ### [爱好](https://cf1.me/recommended-works/)
@@ -22,10 +22,10 @@ date: 2020-05-04 17:17:46
 
 ### 导师
 
-- ZUN
-- Psyris
 - Jonathan Blow
-- Monty Oum (R.I.P.)
+- Psyris
+- ZUN
+- Monty Oum
 - 宫崎骏
 
 ### [你这辈子活着是为了什么？](https://www.zhihu.com/question/20054842/answer/14239275)

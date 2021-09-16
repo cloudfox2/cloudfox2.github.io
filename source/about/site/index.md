@@ -20,7 +20,7 @@ date: 2020-05-04 17:17:46
 ### 2020-04-28
 
 建站，域名：`cf1.me`
-域名服务：[dynadot](https://www.dynadot.com/)
+域名服务：[dynadot](https://www.dynadot.com)
 框架：[Hexo](https://hexo.io/zh-cn/)
 主题：[Yun](https://github.com/cloudfox2/hexo-theme-yun)
 部署：GitHub Pages：`cloudfox2.github.io`
@@ -36,8 +36,13 @@ date: 2020-05-04 17:17:46
 
 ### 2021-02-01
 
-接入 [Google Analytics](https://analytics.google.com/)
+接入 [Google Analytics](https://analytics.google.com)
 
 ### 2021-06-21
 
 主图床迁移至阿里云 OSS
+
+### 2021-09-16
+
+部署于 [Cloudflare Pages](https://pages.cloudflare.com)：`cloudfox2-github-io.pages.dev`
+域名服务器切换至 Cloudflare

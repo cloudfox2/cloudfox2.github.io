@@ -45,4 +45,4 @@ date: 2020-05-04 17:17:46
 ### 2021-09-16
 
 部署于 [Cloudflare Pages](https://pages.cloudflare.com)：`cloudfox2-github-io.pages.dev`
-接入 Cloudflare DNS
+接入 [Cloudflare](https://www.cloudflare.com)

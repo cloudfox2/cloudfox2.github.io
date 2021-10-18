@@ -45,11 +45,16 @@ relative_link: false
 future: true
 highlight:
   enable: false
-  line_number: true
+  line_number: false
   auto_detect: false
   tab_replace: ''
-  wrap: true
-  hljs: false
+  wrap: false
+  hljs: true
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: false
+  tab_replace: ''
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -76,7 +81,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## Use post's date for updated date unless set in front-matter
-use_date_for_updated: false
+updated_option: date
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -109,11 +114,11 @@ deploy:
 # 插件
 
 # https://github.com/ele828/hexo-prism-plugin
-prism_plugin:
-  mode: preprocess # realtime/preprocess
-  theme: okaidia
-  line_number: false # default false
-  # custom_css: "path/to/your/custom.css" # optional
+# prism_plugin:
+#   mode: preprocess # realtime/preprocess
+#   theme: okaidia
+#   line_number: false # default false
+#   # custom_css: "path/to/your/custom.css" # optional
 
 symbols_count_time:
   symbols: true

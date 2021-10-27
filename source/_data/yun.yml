@@ -69,10 +69,14 @@ social:
     link: https://github.com/cloudfox2
     icon: icon-github-line
     color: "#181717"
-  - name: Telegram
-    link: https://t.me/cloudfox
-    icon: icon-telegram-line
-    color: "#0088CC"
+  - name: Peing
+    link: https://peing.net/cloudfox
+    icon: icon-questionnaire-line
+    color: "#525252"
+  # - name: Telegram
+  #   link: https://t.me/cloudfox
+  #   icon: icon-telegram-line
+  #   color: "#0088CC"
   - name: Twitter
     link: https://twitter.com/cloudfox22
     icon: icon-twitter-line
@@ -89,10 +93,6 @@ social:
     link: /atom.xml # config.feed.path
     icon: icon-rss-line
     color: orange
-  # - name: Peing
-  #   link: https://peing.net/cloudfox
-  #   icon: icon-questionnaire-line
-  #   color: "#525252"
 
 pages:
   - name: 如水

@@ -10,7 +10,7 @@ tags: 游戏设计
 
 ## 前言
 
-距离接触[《不可能的 Boss》(Impossible Bosses，简称 IB)](https://baike.baidu.com/item/%E4%B8%8D%E5%8F%AF%E8%83%BD%E7%9A%84BOSS)已有 12 个年头，游戏时间大概有 3000 小时左右，IB 已成了我的本命游戏。
+距离接触[《不可能的 Boss》](https://baike.baidu.com/item/%E4%B8%8D%E5%8F%AF%E8%83%BD%E7%9A%84BOSS)（Impossible Bosses，简称 IB）已有 12 个年头，游戏时间大概有 3000 小时左右，IB 已成了我的本命游戏。
 对 IB 的了解程度，我不在开发者 Psyris 之下，可谓神交已久。本文将全方位解析我对 IB 的游戏设计和哲学的理解。
 
 <!-- more -->

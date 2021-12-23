@@ -17,7 +17,7 @@ tags: [游戏设计, 译文]
 
 ## 译文
 
-下文选译自 [《Causeway》官网](https://playcauseway.com/)。
+> 下文选译自 [《Causeway》官网](https://playcauseway.com/)
 
 ### 设计目标
 

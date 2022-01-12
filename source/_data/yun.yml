@@ -132,10 +132,13 @@ comment:
   tips:
 
 github_issues:
-  enable: false
+  enable: true
+  username: cloudfox2
+  repository: cloudfox2.github.io
+  filters: is:issue
 
 valine:
-  enable: true
+  enable: false
   appId: xniScjvwPxO3ivBW25ReiHWe-MdYXbMMI
   appKey: MEIJgTbrcF7NTqWDr48je6OP
   placeholder: 加入讨论...

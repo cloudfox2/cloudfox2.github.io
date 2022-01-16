@@ -46,3 +46,8 @@ date: 2020-05-04 17:17:46
 
 部署于 [Cloudflare Pages](https://pages.cloudflare.com)：`cloudfox2-github-io.pages.dev`
 接入 [Cloudflare](https://www.cloudflare.com)
+
+### 2022-01-13
+
+主题 Yun 由 0.7.0 更新至 1.7.0
+评论系统由 Valine 更新为 Waline

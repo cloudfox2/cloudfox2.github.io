@@ -21,5 +21,5 @@ function initPage() {
   Yun.utils.wrapTable();
 }
 
-Yun.boot.copyright();
+// Yun.boot.copyright();
 document.addEventListener("DOMContentLoaded", initPage);

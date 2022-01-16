@@ -1,9 +1,24 @@
-hexo.extend.helper.register("yun_config", function() {
+/* global hexo */
+const { parse } = require("url");
+
+hexo.extend.helper.register("yun_config", function () {
   let { config, theme, yun_version, __ } = this;
   let exportConfig = {
+    hostname: parse(config.url).hostname || config.url,
     root: config.root,
     title: theme.banner.title || config.title,
     version: yun_version,
+    mode: theme.mode,
+    copycode: theme.codeblock.copy_btn,
+    page: {
+      isPost: this.is_post(),
+    },
+    i18n: {
+      placeholder: theme.search.placeholder || __("search.placeholder"),
+      empty: __("search.empty"),
+      hits: __("search.hits"),
+      hits_time: __("search.hits_time"),
+    },
   };
 
   // anonymous_image
@@ -26,6 +41,8 @@ hexo.extend.helper.register("yun_config", function() {
 
   // algolia
   if (theme.algolia_search.enable) {
+    // avoid config.algolia is undefined
+    config.algolia = Object.assign({}, config.algolia);
     exportConfig.algolia = {
       appID:
         process.env.ALGOLIA_APP_ID ||
@@ -34,12 +51,6 @@ hexo.extend.helper.register("yun_config", function() {
       apiKey: process.env.ALGOLIA_API_KEY || config.algolia.apiKey,
       indexName: process.env.ALGOLIA_INDEX_NAME || config.algolia.indexName,
       hits: theme.algolia_search.hits,
-      labels: {
-        input_placeholder:
-          theme.search.placeholder || __("algolia_search.input_placeholder"),
-        hits_empty: __("algolia_search.hits_empty"),
-        hits_stats: __("algolia_search.hits_stats"),
-      },
     };
   }
 
@@ -51,26 +62,33 @@ hexo.extend.helper.register("yun_config", function() {
     };
   }
 
+  // 点击效果
   if (theme.fireworks && theme.fireworks.enable) {
     exportConfig.fireworks = {
       colors: theme.fireworks.colors,
     };
   }
   return `<script id="yun-config">
+    const Yun = window.Yun || {};
     window.CONFIG = ${JSON.stringify(exportConfig)};
   </script>`;
 });
 
-hexo.extend.helper.register("minivaline_config", function() {
-  const minivalineConfig = {
-    el: "#minivaline-container",
-    appId: theme.minivaline.appId,
-    appKey: theme.minivaline.appKey,
-    placeholder: theme.minivaline.placeholder,
-    lang: theme.minivaline.lang,
-    adminEmailMd5: theme.minivaline.adminEmailMd5,
-    math: theme.minivaline.math,
-    md: theme.minivaline.md,
-  };
-  return JSON.stringify(minivalineConfig);
+// wordcloud
+hexo.extend.helper.register("wordcloud_config", function (color) {
+  let { config, theme } = this;
+  const wordcloud_config = {};
+  let list = [];
+  const tags = hexo.locals.get("tags");
+  tags.forEach((tag) => {
+    list.push([tag.name, tag.length / 10 + 1, config.root + tag.path]);
+  });
+  wordcloud_config.list = list;
+  wordcloud_config.fontFamily = theme.font.sans_serif.family;
+  wordcloud_config.fontWeight = theme.font.sans_serif.weight;
+  wordcloud_config.gridSize = 10;
+  wordcloud_config.weightFactor = 13;
+  wordcloud_config.backgroundColor = "transparent";
+  wordcloud_config.color = color;
+  return wordcloud_config;
 });

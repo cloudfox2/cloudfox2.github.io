@@ -1,7 +1,8 @@
-#minivaline-container.comment-container
-script(defer, src=theme.vendors.minivaline_js)
-- var minivalineConfig = minivaline_config()
+#minivaline-container
+- var minivalineConfig = JSON.stringify(theme.minivaline)
 script.
-  document.addEventListener("DOMContentLoaded", function() {
-    new MiniValine(!{minivalineConfig});
-  });
+  Yun.utils.getScript("#{theme.vendors.minivaline_js}", () => {
+    const minivalineConfig = !{minivalineConfig}
+    minivalineConfig.el = "#minivaline-container"
+    new MiniValine(minivalineConfig);
+  }, window.MiniValine);

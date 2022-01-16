@@ -4,9 +4,13 @@ block content
   article#page
     +page_header(page.title, theme.albums.icon)
     include ./_third-party/lightgallery.pug
+
     if page.photos
       #gallery
         .page-subtitle!=_p('counter.photos', page.photos.length)
+        .page-action.text-center
+          a.hty-icon-button(href="./" style="width:2.5rem;height:2.5rem;", title=__('accessibility.back'))
+            +icon('icon-arrow-go-back-line')
         if !page.gallery_password
           #lightgallery.photo-list
             for photo in page.photos
@@ -14,8 +18,8 @@ block content
                 img.photo-list-cover(src=photo.src, loading="lazy", alt=photo.caption)
                 figcaption=photo.caption
         else
-          script(defer, src=theme.vendors.crypto_js.all)
-          script(defer, src=url_for(theme.albums.src))
+          script(src=theme.vendors.crypto_js.all)
+          script(src=url_for(theme.albums.src))
           #decryptContainer
             input#decrypt-password(type="password")
             button#decryptButton.hty-icon-button.button-glow(title=__('post.decrypt'))
@@ -29,8 +33,4 @@ block content
                 img.photo-list-cover(src=theme.anonymous_image loading="lazy", alt=photo.caption, title=photo.desc)
                 figcaption=photo.caption
 
-    section.post-body(itemprop='articleBody')
-      .post-content(class='post-markdown')!= page.content
-
-  if page.comments && theme.comment.enable
-    include ./_third-party/comments/index.pug
+    section.post-body.markdown-body(itemprop='articleBody')!= page.content

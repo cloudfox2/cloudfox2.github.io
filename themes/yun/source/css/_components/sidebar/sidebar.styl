@@ -1,6 +1,54 @@
 $sidebar-bg-image = hexo-config('sidebar.bg_image');
 $sidebar-bg-position = hexo-config('sidebar.bg_position');
 
+// 只在主页显示
+#menu-btn {
+  display: none;
+  position: fixed;
+  left: 0.8rem;
+  top: 0.6rem;
+  line-height: 1;
+  z-index: $menu-btn-z-index;
+  cursor: pointer;
+  background: var(--hty-bg-color20);
+
+  +mobile() {
+    display: flex;
+  }
+}
+
+.is-home {
+  #menu-btn {
+    display: flex;
+  }
+
+  .sidebar {
+    left: -20rem;
+    transform: translateX(0);
+    visibility: hidden;
+  }
+
+  .sidebar-translate {
+    the-transition();
+    padding-left: 0;
+  }
+
+  .sidebar-open {
+    .sidebar {
+      transform: translateX(20rem);
+      visibility: visible;
+    }
+
+    .sidebar-translate {
+      padding-left: 20rem;
+
+      +mobile() {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
 .sidebar {
   position: fixed;
   overflow-y: auto;
@@ -8,7 +56,7 @@ $sidebar-bg-position = hexo-config('sidebar.bg_position');
   bottom: 0;
   left: 0;
   width: 20rem;
-  background: $white95;
+  background-color: var(--hty-bg-color95);
   background-image: url($sidebar-bg-image);
   background-size: contain;
   background-repeat: no-repeat;
@@ -28,24 +76,6 @@ $sidebar-bg-position = hexo-config('sidebar.bg_position');
 
     +mobile() {
       padding-left: 0;
-    }
-  }
-
-  &-toggle {
-    display: none;
-
-    +mobile() {
-      display: flex;
-    }
-
-    &-fixed {
-      position: fixed;
-      background: $white50;
-      left: 0.8rem;
-      top: 0.6rem;
-      line-height: 1;
-      z-index: $menu-btn-z-index;
-      cursor: pointer;
     }
   }
 
@@ -93,37 +123,14 @@ $sidebar-bg-position = hexo-config('sidebar.bg_position');
     .sidebar {
       transform: translateX(20rem);
       visibility: visible;
-    }
-  }
-}
 
-.is-home {
-  .sidebar {
-    left: -20rem;
-    transform: translateX(0);
-    visibility: hidden;
-  }
-
-  .sidebar-toggle {
-    display: flex;
-  }
-
-  .sidebar-translate {
-    the-transition();
-    padding-left: 0;
-  }
-
-  .sidebar-open {
-    .sidebar {
-      transform: translateX(20rem);
-      visibility: visible;
-    }
-
-    .sidebar-translate {
-      padding-left: 20rem;
-
-      +mobile() {
-        padding-left: 0;
+      &-overlay {
+        background-color: rgba(0, 0, 0, 0.3);
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: $sidebar-z-index - 1;
+        transition: 0.4s;
       }
     }
   }

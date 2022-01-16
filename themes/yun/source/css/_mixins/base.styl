@@ -1,3 +1,20 @@
+// mode
+dark() {
+  --hty-mode: 'dark';
+  --hty-bg-color: #303030;
+  --hty-text-color: #f2f2f2;
+  --hty-secondary-text-color: #eeeeee;
+  --banner-line-color: white;
+  --banner-char-color: white;
+  --post-block-bg-color: convert(hexo-config('colors.dark.block'));
+  // star-markdown-css
+  --smc-link-color: lighten($colors.primary, 30%);
+  --hty-bg-color20:$black20;
+  --hty-bg-color50:$black50;
+  --hty-bg-color90:$black90;
+  --hty-bg-color95:$black95;
+}
+
 // small
 // 768px
 mobile() {
@@ -14,7 +31,7 @@ tablet() {
 
 the-transition() {
   transition-property: all;
-  transition-duration: 0.2s;
+  transition-duration: 0.3s;
   transition-delay: 0s;
 }
 

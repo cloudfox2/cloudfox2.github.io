@@ -1,16 +1,18 @@
 // color
-$white = #FFFFFF;
 $white95 = #FFFFFFF3;
 $white90 = #FFFFFFE6;
 $white50 = #FFFFFF80;
-$black = #000000;
+$white20 = #FFFFFF33;
+$black95 = #000000F3;
+$black90 = #000000E6;
+$black50 = #00000080;
+$black20 = #00000033;
 $light = #f7f7f7;
 $body = #2e405b;
 $dark = #303133;
 $gray = #999999;
 $red = #db2828;
 $orange = #EB6C46; //#F2711C
-$yellow = #FF8718;
 $green = #21ba45;
 $blue = #0078E7;
 $indigo = #515bd4;
@@ -20,16 +22,30 @@ $light-blue = #42B8DD;
 $light-gray = #CCCCCC;
 $colors ?= {
   primary: convert(hexo-config('colors.primary')) || $purple,
-  inverse: $yellow,
   success: $green,
   warning: $orange,
   danger: $red,
-  info: $light-blue
+  info: $light-blue,
+  link: $blue,
+  base: $gray,
+  yellow: #FF8718
 };
-// text
-$color ?= {
-  text: $dark,
-  link: $colors.primary
-};
-// selection
 $selection-bg = convert(hexo-config('colors.selection_bg'));
+
+:root {
+  for $name, $color in $colors {
+    --hty-{$name}-color: $color;
+  }
+}
+
+set-color(type, color) {
+  .{type} {
+    color: darken(color, 10);
+    --blockquote-border-left-color: convert('var(--hty-' + type + '-color)');
+    --blockquote-bg-color: rgba(color, 0.1);
+  }
+}
+
+for $name, $color in $colors {
+  set-color($name, $color);
+}

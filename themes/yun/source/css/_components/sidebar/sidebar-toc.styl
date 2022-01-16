@@ -1,6 +1,8 @@
 .post-toc {
   line-height: 1.8;
   padding: 1rem;
+  // font-size: 1.1rem;
+  // font-family: $font-family-serif;
 
   ol {
     list-style: none;
@@ -9,10 +11,10 @@
     margin: 0;
 
     .toc-link {
-      color: $colors.primary;
+      color: var(--smc-link-color);
 
       &:hover {
-        color: $colors.danger;
+        color: $colors.warning;
       }
     }
 
@@ -21,19 +23,24 @@
     }
 
     .toc-child {
-      overflow: hidden;
-      transition: max-height 0.6s ease-in;
-      max-height: 0;
+      font-size: 1rem;
+
+      if (hexo-config('toc.collapse')) {
+        overflow: hidden;
+        transition: max-height 0.6s ease-in;
+        max-height: 0;
+      }
     }
 
     .toc-item {
       &.active {
         &>.toc-link {
-          color: $orange;
+          color: $colors.warning;
+          border-bottom: 1px solid $colors.warning;
         }
 
         &>.toc-child {
-          max-height: 1000px;
+          max-height: 10000px;
         }
       }
     }

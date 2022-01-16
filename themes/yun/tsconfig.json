@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "resolveJsonModule": true,
+    "types": ["@vuepress/client/types"],
+    "paths": {
+      "~/*": ["docs/.vuepress/*"]
+    },
+    "esModuleInterop": true
+  },
+  "include": [
+    "docs/.vuepress/**/*"
+  ]
+}

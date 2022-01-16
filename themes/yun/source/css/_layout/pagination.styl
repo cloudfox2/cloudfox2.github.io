@@ -3,7 +3,7 @@
   width: 2rem;
   height: 2rem;
   margin: 0;
-  background-color: alpha($white, 0.5);
+  background-color: alpha(white, 0.5);
   transition: 0.2s;
 }
 
@@ -14,23 +14,26 @@
     @extend .page-number-basic;
   }
 
-  .prev, .next, .page-number {
+  .prev, .next, .page-number, .space {
     @extend .page-number-basic;
-    color: $dark;
+    color: var(--hty-text-color) !important;
     text-decoration: none;
 
     &:hover {
-      background: rgba(lighten($colors.primary, 90%), 0.9);
+      font-weight: normal;
+      color: var(--hty-bg-color) !important;
+      background: rgba($colors.primary, 0.7);
     }
 
     &:active {
+      color: var(--hty-bg-color) !important;
       background: rgba(lighten($colors.primary, 20%), 0.9);
-      color: $white;
     }
 
     &.current {
-      background: rgba($colors.primary, 0.9);
-      color: $white;
+      font-weight: normal;
+      background: rgba(lighten($colors.primary, 20%), 0.9);
+      color: var(--hty-bg-color) !important;
       cursor: default;
     }
   }

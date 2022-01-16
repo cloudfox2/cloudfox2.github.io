@@ -1,6 +1,16 @@
+/**
+ * 解密
+ * @param {string} text
+ * @param {string} password
+ * @returns
+ */
 function decrypt(text, password) {
   return CryptoJS.AES.decrypt(text, password).toString(CryptoJS.enc.Utf8);
 }
+
+/**
+ * 解密所有相册
+ */
 function decryptAll() {
   const password = document.getElementById("decrypt-password").value;
   if (password) {
@@ -24,20 +34,28 @@ function decryptAll() {
         img.title = desc;
         photo.querySelector("figcaption").innerText = caption;
       });
+    } else {
+      alert("Decrypt Error!");
+      window.location.reload();
     }
   }
 }
 
+/**
+ * 添加解密按钮事件
+ */
 function initGalleryDecrypt() {
-  decryptButton.onclick = decryptAll;
-  document
-    .getElementById("decrypt-password")
-    .addEventListener("keydown", (e) => {
-      if (e.key === "Enter") {
-        decryptAll();
-      }
-    });
+  if (decryptButton) {
+    decryptButton.onclick = decryptAll;
+    document
+      .getElementById("decrypt-password")
+      .addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          decryptAll();
+        }
+      });
+  }
 }
 
-window.addEventListener("DOMContentLoaded", initGalleryDecrypt);
-window.addEventListener("pjax:complete", initGalleryDecrypt);
+document.addEventListener("DOMContentLoaded", initGalleryDecrypt);
+document.addEventListener("pjax:success", initGalleryDecrypt);

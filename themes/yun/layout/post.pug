@@ -2,19 +2,15 @@ extends _partial/layout.pug
 
 block content
   - var post = page
+  - var post_type = getPropertyByType(post.type)
+
   #post
-    article.post-block(itemscope, itemtype='https://schema.org/Article')
+    article.hty-card.post-block(itemscope, itemtype='https://schema.org/Article')
       include _partial/post/post-schema.pug
-      if post.type
-        - var typeColor = theme.types.link.color
-        - var typeIcon = theme.types.link.icon
-        if post.type in theme.types
-          - typeColor = theme.types[post.type].color
-          - typeIcon = theme.types[post.type].icon
       header.post-header
-        h1.post-title(itemprop='name headline', style=`color: ${typeColor}`)
+        h1.post-title(itemprop='name headline', style=post.type ? `color: ${post_type.color}` : '')
           if post.type
-            +icon(typeIcon)
+            +icon(post_type.icon)
           | #{post.title}
 
           if theme.post_edit.enable
@@ -23,14 +19,11 @@ block content
         include _partial/post/post-meta.pug
 
         if post.url
-          a.hty-button.hty-button--raised(href=url_for(post.url), style=`margin-top: 1rem;background-color:${typeColor}`)=__('post.view_link')
+          a.hty-button.hty-button--raised(href=url_for(post.url), style=`margin-top: 1rem;background-color:${post_type.color}`)=__('post.view_link')
 
-      section.post-body(itemprop='articleBody')
-        .post-content(class='post-markdown')!=post.content
+      section.post-body.markdown-body(itemprop='articleBody', style=`--smc-primary:${theme.colors.primary};`)!=post.content
 
-        if page.reward !== undefined
-          - theme.reward_settings.enable = page.reward
-        if theme.reward_settings.enable
+        if theme.reward.enable && page.reward !== false
           include _partial/post/reward.pug
 
         if theme.creative_commons.license && theme.creative_commons.post
@@ -38,6 +31,3 @@ block content
 
     if post.prev || post.next
       include _partial/post/post-nav.pug
-
-  if page.comments && theme.comment.enable
-    include ./_third-party/comments/index.pug

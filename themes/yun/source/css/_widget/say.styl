@@ -1,4 +1,5 @@
 #say {
+  color: var(--hty-text-color);
   display: block;
   text-align: center;
   font-family: $font-family-serif;
@@ -6,9 +7,10 @@
   padding: 1rem;
   padding-left: 4rem;
   padding-right: 4rem;
-  background: $white90;
-  border-top: $border-width solid black;
-  border-bottom: $border-width solid black;
+  // text-shadow: 0px 0px 5px var(--hty-bg-color);
+  background: var(--hty-bg-color50);
+  border-top: $border-width solid var(--hty-secondary-text-color);
+  border-bottom: $border-width solid var(--hty-secondary-text-color);
 
   +mobile() {
     padding-left: 1rem;
@@ -16,7 +18,6 @@
   }
 
   #say-content {
-    color: var(--hty-color);
     display: block;
   }
 

@@ -13,16 +13,15 @@ html(lang=config.language)
     meta(name="copyright" content=copyright)
     !=meta_generator()
     meta(name='theme' content="hexo-theme-yun")
-    //- meta(property='og:image' content=theme.avatar.url)
     meta(name='twitter:image' content=theme.avatar.url)
-    !=open_graph()
     - page_title(page)
     if page.title
       title=page.title + ' | ' + title
     else
       title=title
-    include head.pug
     include ../_third-party/cdn.pug
+    include head.pug
+    include extended.pug
     block preconnect
   body(class= is_home() ? 'is-home' : '')
     //- background
@@ -33,9 +32,11 @@ html(lang=config.language)
       include sidebar.pug
       main#content.sidebar-translate
         block content
+
+        if is_post() || is_page()
+          if page.comments && theme.comment.enable
+            include ../_third-party/comments/index.pug
+
       include footer.pug
       //- widget
       include ../_widget/index.pug
-    if theme.js
-      each item in theme.js
-        script(defer, src=url_for(theme.cdn.pre + item))

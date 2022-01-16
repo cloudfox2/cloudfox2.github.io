@@ -2,19 +2,22 @@ head:
   css:
     fortawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
 
-custom:
-  style: source/_data/style/*
+# custom:
+#   style: source/_data/style/*
 
 # cdn:
 #   pre: https://cdn.jsdelivr.net/gh/cloudfox2/cloudfox2.github.io
 
+# mode: light | dark | auto | time
+mode: time
+
 colors:
   primary: "#2F54EB"
-  bg: "#BAE7FF"
+  bg: "#F0F5FF" # #BAE7FF
   selection_bg: "#85A5FF"
   # 标签云中标签的起始色和结束色
-  tag_start_color: "#85A5FF"
-  tag_end_color: "#10239E"
+  tag_start_color: "#ADC6FF"
+  tag_end_color: "#1D39C4"
 
 font:
   cdn:
@@ -35,6 +38,7 @@ favicon: /favicon.ico
 bg_image:
   enable: true
   url: https://cf0.oss-cn-shanghai.aliyuncs.com/blog/bg.jpg
+  # dark:
   opacity: 1
 
 sidebar:
@@ -42,7 +46,8 @@ sidebar:
   bg_position: bottom left
 
 search:
-  bg_image: https://cf0.oss-cn-shanghai.aliyuncs.com/blog/bg_search.webp
+  modal: true
+#   bg_image: https://cf0.oss-cn-shanghai.aliyuncs.com/blog/bg_search.webp
 
 banner:
   enable: true
@@ -65,14 +70,14 @@ menu:
     icon: icon-clipboard-line
 
 social:
-  - name: GitHub
-    link: https://github.com/cloudfox2
-    icon: icon-github-line
-    color: "#181717"
   - name: Peing
     link: https://peing.net/cloudfox
     icon: icon-questionnaire-line
-    color: "#525252"
+    color: "#E6B45C"
+  - name: GitHub
+    link: https://github.com/cloudfox2
+    icon: icon-github-line
+    color: "#6e5494"
   # - name: Telegram
   #   link: https://t.me/cloudfox
   #   icon: icon-telegram-line
@@ -113,7 +118,7 @@ footer:
     name: fas fa-yin-yang fa-spin # fas fa-heartbeat
     animated: false
     animation: spin # pulse
-    color: "#303133" # #EB3323
+    color: --hty-text-color # #303133 # #EB3323
 
 archive:
   last_word: '以上'
@@ -124,18 +129,31 @@ engine_search:
 local_search:
   enable: true
 
-reward_settings:
+reward:
   enable: false
 
 comment:
   enable: true
   tips:
+    # - 若您想及时得到回复提醒，建议跳转 GitHub Issues 评论。
+    # - 若没有本文 Issue，您可以使用 Comment 模版新建。
+  candidates:
+    # - github_issues
 
 github_issues:
-  enable: true
+  enable: false
   username: cloudfox2
   repository: cloudfox2.github.io
   filters: is:issue
+
+waline:
+  enable: true
+  serverURL: https://blog-waline-cf.vercel.app/
+  visitor: true
+  emoji:
+    - https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tw-emoji
+    # - https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba
+  comment: true
 
 valine:
   enable: false

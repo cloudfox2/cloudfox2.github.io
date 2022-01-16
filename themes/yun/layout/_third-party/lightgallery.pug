@@ -1,6 +1,5 @@
 link(rel='stylesheet', href=url_for(theme.vendors.lightgallery.css))
-script(defer, src=url_for(theme.vendors.lightgallery.js))
 script.
-  document.addEventListener("DOMContentLoaded", () => {
+  Yun.utils.getScript("#{theme.vendors.lightgallery.js}", () => {
     lightGallery(document.getElementById('lightgallery'));
-  });
+  }, window.lightGallery);

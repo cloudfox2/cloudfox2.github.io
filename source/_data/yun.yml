@@ -110,7 +110,7 @@ pages:
     color: hotpink
   
 girls:
-  enable: true
+  enable: false
 
 footer:
   since: 2020

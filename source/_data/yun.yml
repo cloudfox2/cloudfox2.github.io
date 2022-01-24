@@ -104,10 +104,10 @@ pages:
     url: /links/
     icon: icon-genderless-line
     color: dodgerblue
-  - name: 朱颜
-    url: /girls/
-    icon: icon-women-line
-    color: hotpink
+  # - name: 朱颜
+  #   url: /girls/
+  #   icon: icon-women-line
+  #   color: hotpink
   
 girls:
   enable: false

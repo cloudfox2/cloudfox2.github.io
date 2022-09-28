@@ -1,0 +1,139 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: 云狐之境
+subtitle: 
+description: 云狐的个人博客。
+author: 云狐
+language: zh-CN
+timezone: Asia/Shanghai
+
+# URL
+url: https://cf1.me
+root: /
+permalink: :link/
+permalink_defaults:
+pretty_urls:
+  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: false # Set to false to remove trailing '.html' from permalinks
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+  - README.md
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: false
+  line_number: false
+  auto_detect: false
+  tab_replace: ''
+  wrap: false
+  hljs: true
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: false
+  tab_replace: ''
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 7
+  order_by: -date
+
+# Category & Tag
+default_category: 未分类
+category_map:
+tag_map:
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## Use post's date for updated date unless set in front-matter
+updated_option: date
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Include / Exclude file(s)
+## include:/exclude: options only apply to the 'source/' folder
+include: []
+exclude: []
+ignore:
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: yun
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: 
+    github: git@github.com:cloudfox2/cloudfox2.github.io.git
+    # gitee: git@gitee.com:cloudfox2/cloudfox2.git
+  branch: master
+  message: update
+  name: cloudfox
+  email: 348868282@qq.com
+
+# 插件
+
+# https://github.com/ele828/hexo-prism-plugin
+# prism_plugin:
+#   mode: preprocess # realtime/preprocess
+#   theme: okaidia
+#   line_number: false # default false
+#   # custom_css: "path/to/your/custom.css" # optional
+
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
+
+search:
+  path: search.xml
+  field: post
+  content: true
+
+codepen:
+  userId: "cloudfox2"
+  theme: "light"
+  default_tabs: "result"
+  height: 265
+  width: "100%"

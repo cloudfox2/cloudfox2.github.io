@@ -1,0 +1,27 @@
+#say {
+  color: var(--hty-text-color);
+  display: block;
+  text-align: center;
+  font-family: $font-family-serif;
+  font-weight: bold;
+  padding: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  // text-shadow: 0px 0px 5px var(--hty-bg-color);
+  background: var(--hty-bg-color50);
+  border-top: $border-width solid var(--hty-secondary-text-color);
+  border-bottom: $border-width solid var(--hty-secondary-text-color);
+
+  +mobile() {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #say-content {
+    display: block;
+  }
+
+  #say-from {
+    display: block;
+  }
+}

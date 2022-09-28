@@ -1,0 +1,178 @@
+head:
+  css:
+    fortawesome: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css
+
+# custom:
+#   style: source/_data/style/*
+
+# cdn:
+#   pre: https://cdn.jsdelivr.net/gh/cloudfox2/cloudfox2.github.io
+
+# mode: light | dark | auto | time
+mode: time
+
+colors:
+  primary: "#2F54EB"
+  bg: "#F0F5FF" # #BAE7FF
+  selection_bg: "#85A5FF"
+  # 标签云中标签的起始色和结束色
+  tag_start_color: "#ADC6FF"
+  tag_end_color: "#1D39C4"
+
+font:
+  cdn:
+      enable: true
+      lib:
+        - https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&family=Source+Code+Pro&display=swap
+  serif:
+    family: "'Noto Serif SC', serif"
+    weight: 700
+  sans_serif:
+    family: "Consolas, 'SF Mono', 'PingFang SC', 'Microsoft YaHei', sans-serif"
+    weight: 400
+  monospace:
+    family: "Consolas, Menlo, 'Fira Code', 'Source Code Pro', monospace"
+
+favicon: /favicon.ico
+
+bg_image:
+  enable: true
+  url: https://cf0.oss-cn-shanghai.aliyuncs.com/blog/bg.jpg
+  # dark:
+  opacity: 1
+
+sidebar:
+  bg_image: https://cf0.oss-cn-shanghai.aliyuncs.com/blog/bg_sidebar.webp
+  bg_position: bottom left
+
+search:
+  modal: true
+#   bg_image: https://cf0.oss-cn-shanghai.aliyuncs.com/blog/bg_search.webp
+
+banner:
+  enable: true
+  title: 雲狐之境
+
+say:
+  enable: true
+  api: /data/sentences.json
+  src: /js/say.js
+  hitokoto:
+    enable: false
+
+avatar:
+  url: https://cf0.oss-cn-shanghai.aliyuncs.com/blog/avatar.webp
+
+menu:
+  custom:
+    title: 留言
+    path: /about/#comment
+    icon: icon-clipboard-line
+
+social:
+  - name: Peing
+    link: https://peing.net/cloudfox
+    icon: icon-questionnaire-line
+    color: "#E6B45C"
+  - name: GitHub
+    link: https://github.com/cloudfox2
+    icon: icon-github-line
+    color: "#6e5494"
+  # - name: Telegram
+  #   link: https://t.me/cloudfox
+  #   icon: icon-telegram-line
+  #   color: "#0088CC"
+  - name: Twitter
+    link: https://twitter.com/cloudfox22
+    icon: icon-twitter-line
+    color: "#1DA1F2"
+  - name: bilibili
+    link: https://space.bilibili.com/353913
+    icon: icon-bilibili-line
+    color: "#FF8EB3"
+  - name: E-Mail
+    link: mailto:cloudfox22@gmail.com
+    icon: icon-mail-line
+    color: "#8E71C1"
+  - name: RSS
+    link: /atom.xml # config.feed.path
+    icon: icon-rss-line
+    color: orange
+
+pages:
+  - name: 如水
+    url: /links/
+    icon: icon-genderless-line
+    color: dodgerblue
+  - name: 朱颜
+    url: /girls/
+    icon: icon-women-line
+    color: hotpink
+  
+girls:
+  enable: true
+
+footer:
+  since: 2020
+  icon:
+    name: fas fa-yin-yang fa-spin # fas fa-heartbeat
+    animated: false
+    animation: spin # pulse
+    color: --hty-text-color # #303133 # #EB3323
+
+archive:
+  last_word: '以上'
+
+engine_search:
+  enable: false
+
+local_search:
+  enable: true
+
+reward:
+  enable: false
+
+comment:
+  enable: true
+  tips:
+    # - 若您想及时得到回复提醒，建议跳转 GitHub Issues 评论。
+    # - 若没有本文 Issue，您可以使用 Comment 模版新建。
+  candidates:
+    # - github_issues
+
+github_issues:
+  enable: false
+  username: cloudfox2
+  repository: cloudfox2.github.io
+  filters: is:issue
+
+waline:
+  enable: true
+  serverURL: https://blog-waline-cf.vercel.app/
+  visitor: true
+  emoji:
+    - https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tw-emoji
+    # - https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba
+  comment: true
+  locale:
+    placeholder: 填写邮箱，可以收到回复通知哦~
+
+valine:
+  enable: false
+  appId: xniScjvwPxO3ivBW25ReiHWe-MdYXbMMI
+  appKey: MEIJgTbrcF7NTqWDr48je6OP
+  placeholder: 加入讨论...
+  avatar: mp
+  meta:
+    - nick
+    - mail
+    - link
+  pageSize: 10
+  visitor: true
+  visitor_index: false #全局统计，与单篇统计冲突
+  recordIP: true
+  enableQQ: true
+
+google_analytics:
+  enable: true
+  id: G-91CMZ10SMP

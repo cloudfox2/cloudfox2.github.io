@@ -1,0 +1,47 @@
+{
+  "name": "hexo-theme-yun",
+  "version": "1.7.0",
+  "description": "☁️ A fast & light & lovely theme for Hexo.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YunYouJun/hexo-theme-yun.git"
+  },
+  "author": "YunYouJun <me@yunyoujun.cn>",
+  "license": "SATA",
+  "homepage": "https://yun.yunyoujun.cn",
+  "bugs": {
+    "url": "https://github.com/YunYouJun/hexo-theme-yun/issues"
+  },
+  "keywords": [
+    "hexo",
+    "theme",
+    "yun",
+    "starry",
+    "docs"
+  ],
+  "scripts": {
+    "build": "yarn docs:build",
+    "dev": "yarn docs:dev",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "docs:serve": "vuepress serve docs",
+    "docs:clean": "rimraf docs/.vuepress/.temp docs/.vuepress/.cache docs/.vuepress/dist",
+    "generate:demo-sites": "esno docs/.vuepress/scripts/index.ts",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "@vuepress/plugin-docsearch": "^2.0.0-beta.26",
+    "@vuepress/plugin-google-analytics": "^2.0.0-beta.26",
+    "@vuepress/plugin-pwa": "^2.0.0-beta.26",
+    "@vuepress/plugin-pwa-popup": "^2.0.0-beta.26",
+    "@vuepress/plugin-register-components": "^2.0.0-beta.26",
+    "esno": "^0.12.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.6",
+    "vuepress": "^2.0.0-beta.26"
+  },
+  "lint-staged": {
+    "sites.json": "npm run generate:demo-sites && git add -A"
+  }
+}

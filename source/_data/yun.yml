@@ -38,7 +38,7 @@ favicon: /favicon.ico
 bg_image:
   enable: true
   url: https://cf0.oss-cn-shanghai.aliyuncs.com/blog/bg.jpg
-  # dark:
+  dark: https://cf0.oss-cn-shanghai.aliyuncs.com/blog/bg_dark.jpg
   opacity: 1
 
 sidebar:

@@ -51,3 +51,7 @@ date: 2020-05-04 17:17:46
 
 主题 Yun 由 0.7.0 更新至 1.7.0
 评论系统由 Valine 更新为 Waline
+
+### 2025-03-28
+
+Waline 数据库由 LeanCloud 迁移至 TiDB
